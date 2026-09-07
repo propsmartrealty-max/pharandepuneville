@@ -1,0 +1,142 @@
+---
+import '../index.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonicalUrl?: string;
+}
+
+const {
+  title = "Pharande Puneville | Punawale, Pune — Masterplanned by Aedas",
+  description = "Pharande Puneville: 28-Acre Integrated Township in Punawale, Pune designed by world-renowned architects Aedas. Featuring 2, 2.5 & 3 BHK luxury residences, 22-ft elevated skywalk, 4 Olympic-sized pools, and 60% open greens.",
+  image = "/images/puneville/hero/banner1.jpg",
+  canonicalUrl = "https://pharandepuneville.com/",
+} = Astro.props;
+
+// Rich Structured Schema.org for Google Real Estate & Knowledge Graph
+const schemaOrg = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "RealEstateListing",
+      "@id": "https://pharandepuneville.com/#listing",
+      "name": "Pharande Puneville Luxury Residences",
+      "description": description,
+      "url": canonicalUrl,
+      "image": [
+        "https://pharandepuneville.com/images/puneville/hero/banner1.jpg",
+        "https://pharandepuneville.com/images/puneville/gallery/gallery-tower-night.jpg",
+        "https://pharandepuneville.com/images/puneville/gallery/gallery-pool-evening.jpg"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "lowPrice": "8500000",
+        "highPrice": "13500000",
+        "offerCount": "1900"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Near Mumbai-Pune Expressway, Punawale",
+        "addressLocality": "PCMC, Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411033",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "18.6368",
+        "longitude": "73.7431"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://pharandepuneville.com/#developer",
+      "name": "Pharande Spaces",
+      "legalName": "Pharande Promoters and Builders",
+      "url": "https://pharandepuneville.com",
+      "logo": "https://pharandepuneville.com/images/puneville/puneville-monument-logo.svg",
+      "telephone": "+91-9822000000",
+      "sameAs": [
+        "https://www.pharandespaces.com"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What configurations are available at Pharande Puneville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pharande Puneville offers 2 BHK (752 sq.ft.), 2 BHK Grande (848 sq.ft.), 2.5 BHK with dedicated Work-From-Home Pod (948 sq.ft.), and 3 BHK Imperial Signature Residences (1,172 sq.ft.)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who designed the masterplan of Puneville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The entire 28-acre masterplan is conceptualized by globally acclaimed master architects AEDAS, featuring an iconic 22-foot elevated skywalk promenade connecting all clusters."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the MahaRERA registration number for Puneville Phase III?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pharande Puneville Phase III Cluster D (Wings Q, R, S) is registered under MahaRERA number P52100000044."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Google Search & Crawl SEO -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content="Pharande Puneville, Puneville Punawale, Aedas Puneville, flats in Punawale, luxury 2 BHK Punawale, 3 BHK Hinjawadi expressway, Pharande Spaces Pune, PCMC luxury townships" />
+    <meta name="author" content="Pharande Spaces" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Open Graph / Facebook / WhatsApp Preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:site_name" content="Pharande Puneville" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+
+    <!-- Performance & Font Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Google Structured Microdata JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify(schemaOrg)} />
+  </head>
+
+  <body class="bg-[#FAF7F2] text-[#0F172A] font-sans selection:bg-[#C59B27] selection:text-white antialiased overflow-x-hidden">
+    <slot />
+  </body>
+</html>
