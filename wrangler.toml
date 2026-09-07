@@ -1,0 +1,28 @@
+# Cloudflare Pages / Workers Advanced Edge Configuration
+# Project: Pharande Puneville Luxury Residential Township
+
+name = "pharande-puneville"
+compatibility_date = "2024-09-01"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "dist"
+
+# Smart Placement: Cloudflare intelligently moves edge functions closer to upstream APIs & databases
+[placement]
+mode = "smart"
+
+# Environment Variables (Non-sensitive defaults; secrets should be added in Cloudflare Dashboard)
+[vars]
+ENVIRONMENT = "production"
+PROJECT_NAME = "Pharande Puneville"
+LOCATION_PCMC = "Punawale, PCMC, Pune"
+MAHARERA_CLUSTER_D = "P52100000044"
+DEFAULT_SALES_PHONE = "+919822000000"
+SUPPORT_EMAIL = "sales@pharandepuneville.com"
+
+# Observability & Analytics Engine
+[observability]
+enabled = true
+head_sampling_rate = 1
+
+# Production Deployment Trigger
+# run: npx wrangler pages deploy dist

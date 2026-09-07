@@ -1,0 +1,17 @@
+# Cloudflare Pages Edge Redirects & Canonical Routing
+
+# 1. Luxury Vanity Shortcuts for High-Intent Ad Campaigns
+/brochure        /#residences       302
+/floor-plans     /#residences       302
+/cluster-d       /#masterplan       302
+/site-tour       /#vip-tour         302
+/pricing         /#financials       302
+/emi             /#financials       302
+/location        /#location         302
+/gallery         /#gallery          302
+/skywalk         /#vision           302
+/aedas           /#vision           302
+/amenities       /#amenities        302
+
+# 2. SPA Client-Side Routing Fallback (All unhandled paths render index.html with 200 OK)
+/*               /index.html        200
