@@ -1,11 +1,14 @@
+# =============================================================================
 # Robots.txt for Pharande Puneville (https://pharandepuneville.com)
-# Enterprise Edge Hardened Policy & Search Crawl Directives
+# Enterprise Edge Hardened Policy, AI Scraper Defense & Search Crawl Directives
+# =============================================================================
 
 # -----------------------------------------------------------------------------
-# 1. Primary Verified Search Engines (Full Access with Asset Crawling)
+# 1. Primary Verified Search Engines (Unrestricted Crawl & Fast Rendering)
 # -----------------------------------------------------------------------------
 User-agent: Googlebot
 User-agent: Googlebot-Image
+User-agent: Googlebot-Mobile
 User-agent: Bingbot
 User-agent: Applebot
 User-agent: DuckDuckBot
@@ -18,10 +21,11 @@ Allow: /_astro/*.css
 Allow: /_astro/*.js
 Allow: /sitemap.xml
 Disallow: /api/
+Disallow: /functions/
 Disallow: /*?*
 
 # -----------------------------------------------------------------------------
-# 2. Social Media Preview Crawlers (OpenGraph / Rich Snippets)
+# 2. Social Media Preview Crawlers (OpenGraph Previews on Messaging & Feed)
 # -----------------------------------------------------------------------------
 User-agent: Twitterbot
 User-agent: facebookexternalhit
@@ -31,9 +35,28 @@ User-agent: TelegramBot
 User-agent: Pinterestbot
 Allow: /
 Allow: /images/
+Disallow: /api/
 
 # -----------------------------------------------------------------------------
-# 3. Defensive Bot Defense: Block Aggressive Scrapers & Scraping Bots
+# 3. Defensive AI & LLM Training Scraper Blocklist (Protects IP & Bandwidth)
+# -----------------------------------------------------------------------------
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: CCBot
+User-agent: anthropic-ai
+User-agent: ClaudeBot
+User-agent: Claude-Web
+User-agent: PerplexityBot
+User-agent: Google-Extended
+User-agent: Amazonbot
+User-agent: FacebookBot
+User-agent: Omgilibot
+User-agent: Omgili
+User-agent: Diffbot
+Disallow: /
+
+# -----------------------------------------------------------------------------
+# 4. Aggressive Commercial SEO Scrapers & Malicious Bot Blocklist
 # -----------------------------------------------------------------------------
 User-agent: Bytespider
 User-agent: PetalBot
@@ -42,19 +65,28 @@ User-agent: DotBot
 User-agent: MJ12bot
 User-agent: SemrushBot
 User-agent: AhrefsBot
-User-agent: CCBot
-User-agent: GPTBot
+User-agent: BLEXBot
+User-agent: DataForSeoBot
+User-agent: SeekportBot
+User-agent: ZoominfoBot
+User-agent: spbot
+User-agent: TurnitinBot
+User-agent: YisouSpider
 Disallow: /
 
 # -----------------------------------------------------------------------------
-# 4. Default Rule for All Other Standard Crawlers
+# 5. Default Fallback Policy for All Other Crawlers
 # -----------------------------------------------------------------------------
 User-agent: *
+Crawl-delay: 2
 Allow: /
 Allow: /images/
 Disallow: /api/
+Disallow: /functions/
+Disallow: /*.json$
 
 # -----------------------------------------------------------------------------
-# 5. Global XML Sitemap Index
+# 6. Global Host & XML Sitemap Declarations
 # -----------------------------------------------------------------------------
+Host: https://pharandepuneville.com
 Sitemap: https://pharandepuneville.com/sitemap.xml
