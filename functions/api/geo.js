@@ -89,8 +89,8 @@ export async function onRequestGet(context) {
       preferredCurrency,
       currencyCode,
       pricingEstimates,
-      salesHotline: isNRI ? '+919822000000' : '020-67123456',
-      whatsappDirect: `https://wa.me/919822000000?text=Inquiry%20from%20Puneville%20${currencyCode}%20Desk`,
+      salesHotline: '+917744009295',
+      whatsappDirect: `https://wa.me/917744009295?text=Inquiry%20from%20Puneville%20${currencyCode}%20Desk`,
     },
     enterprise: {
       engine: 'Cloudflare Enterprise Edge V8',

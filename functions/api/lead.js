@@ -139,7 +139,94 @@ export async function onRequestPost(context) {
       }
     };
 
-    // 7. Optional Asynchronous CRM Dispatch
+    // 7. Automated Email Dispatch to propsmartrealty@gmail.com via Cloudflare Edge
+    const targetEmail = env?.LEAD_NOTIFICATION_EMAIL || 'propsmartrealty@gmail.com';
+    const emailSubject = `🚨 New Puneville Lead: ${enrichedLead.name} (${enrichedLead.configuration}) - ${enrichedLead.phone}`;
+
+    const emailHtml = `
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #E2D9CC; border-radius: 12px; background: #FAF7F2; color: #0F172A;">
+        <div style="text-align: center; border-bottom: 2px solid #C59B27; padding-bottom: 16px; margin-bottom: 20px;">
+          <h2 style="color: #7A560D; margin: 0;">🏛️ Pharande Puneville VIP Lead</h2>
+          <p style="margin: 5px 0 0 0; font-size: 12px; color: #64748B;">Propsmart Realty Lead Dispatch Engine</p>
+        </div>
+        
+        <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+          <tr style="border-bottom: 1px solid #E2D9CC;">
+            <td style="padding: 10px; font-weight: bold; color: #475569;">Lead Tracking Ref:</td>
+            <td style="padding: 10px; font-weight: bold; color: #845D12; font-family: monospace;">${enrichedLead.leadRef}</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #E2D9CC;">
+            <td style="padding: 10px; font-weight: bold; color: #475569;">Customer Name:</td>
+            <td style="padding: 10px; font-weight: bold; font-size: 16px;">${enrichedLead.name}</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #E2D9CC;">
+            <td style="padding: 10px; font-weight: bold; color: #475569;">Mobile Number:</td>
+            <td style="padding: 10px; font-weight: bold;">
+              <a href="tel:${enrichedLead.phone}" style="color: #0F172A; text-decoration: none;">${enrichedLead.phone}</a>
+              &nbsp;|&nbsp;
+              <a href="https://wa.me/${enrichedLead.phone.replace(/[^0-9]/g, '')}?text=Hello%20${encodeURIComponent(enrichedLead.name)},%20thank%20you%20for%20enquiring%20about%20Pharande%20Puneville" style="color: #25D366; font-weight: bold; text-decoration: none;">💬 WhatsApp</a>
+            </td>
+          </tr>
+          <tr style="border-bottom: 1px solid #E2D9CC;">
+            <td style="padding: 10px; font-weight: bold; color: #475569;">Email Address:</td>
+            <td style="padding: 10px;">${enrichedLead.email || 'Not Provided'}</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #E2D9CC;">
+            <td style="padding: 10px; font-weight: bold; color: #475569;">Configuration:</td>
+            <td style="padding: 10px; color: #0F172A; font-weight: bold;">${enrichedLead.configuration}</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #E2D9CC;">
+            <td style="padding: 10px; font-weight: bold; color: #475569;">Slot / Action:</td>
+            <td style="padding: 10px;">${enrichedLead.preferredSlot}</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #E2D9CC;">
+            <td style="padding: 10px; font-weight: bold; color: #475569;">Cab Request / Notes:</td>
+            <td style="padding: 10px;">${enrichedLead.notes || 'None'}</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; font-weight: bold; color: #475569;">Location (Cloudflare Edge):</td>
+            <td style="padding: 10px; font-size: 12px; color: #64748B;">
+              ${enrichedLead.enterpriseTelemetry.visitorCity}, ${enrichedLead.enterpriseTelemetry.visitorCountry} 
+              (Edge PoP: ${enrichedLead.enterpriseTelemetry.edgeColo}, IP: ${enrichedLead.enterpriseTelemetry.clientIp})
+            </td>
+          </tr>
+        </table>
+        
+        <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #E2D9CC; font-size: 11px; text-align: center; color: #94A3B8;">
+          Sent automatically via Cloudflare Edge Lead Engine for Propsmart Realty (${targetEmail})
+        </div>
+      </div>
+    `;
+
+    // Dispatch email to propsmartrealty@gmail.com asynchronously
+    context.waitUntil(
+      fetch('https://api.mailchannels.net/tx/v1/send', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({
+          personalizations: [
+            {
+              to: [{ email: targetEmail, name: 'Propsmart Realty Leads' }],
+            },
+          ],
+          from: {
+            email: 'leads@pharandepuneville.com',
+            name: 'Pharande Puneville Edge Portal',
+          },
+          subject: emailSubject,
+          content: [
+            {
+              type: 'text/html',
+              value: emailHtml,
+            },
+          ],
+        }),
+      }).catch((err) => {
+        console.error('MailChannels dispatch error:', err);
+      })
+    );
+
+    // 8. Optional Upstream CRM Webhook Dispatch
     if (env && env.LEAD_WEBHOOK_URL) {
       context.waitUntil(
         fetch(env.LEAD_WEBHOOK_URL, {
@@ -156,6 +243,7 @@ export async function onRequestPost(context) {
       success: true,
       leadRef,
       message: 'VIP Tour invitation confirmed. Priority Relationship Director assigned.',
+      dispatchedTo: targetEmail,
       edgeProcessedAt: colo,
       isNRI
     }), { status: 200, headers: corsHeaders });

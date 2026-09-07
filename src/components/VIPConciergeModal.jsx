@@ -161,7 +161,7 @@ export default function VIPConciergeModal({ isOpen, onClose, mode = 'visit' }) {
                     <input
                       type="tel"
                       required
-                      placeholder="+91 98900 12345"
+                      placeholder="+91 77440 09295"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full pl-9 pr-4 py-2.5 rounded-xl glass-inner-well focus:bg-white focus:border-[#845D12] text-xs text-[#0F172A] placeholder-slate-400 focus:outline-none transition-colors"
@@ -320,12 +320,22 @@ export default function VIPConciergeModal({ isOpen, onClose, mode = 'visit' }) {
               )}
             </div>
 
-            <button
-              onClick={onClose}
-              className="px-6 py-2.5 rounded-xl text-xs font-bold text-white bg-[#0F172A] hover:bg-[#1E293B] shadow-md transition-colors"
-            >
-              Back to Website
-            </button>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 max-w-xs mx-auto mb-2">
+              <a
+                href={`https://wa.me/917744009295?text=${encodeURIComponent(`Hello, I have submitted an enquiry on Pharande Puneville portal (Ref: ${leadRef || 'Direct'}). Name: ${formData.name}, Config: ${formData.configuration}, Phone: ${formData.phone}`)}`}
+                target="_blank"
+                rel="noreferrer"
+                className="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-white bg-[#25D366] hover:bg-[#20bd5a] shadow-md flex items-center justify-center gap-2 transition-all hover:scale-105"
+              >
+                <span>Instant WhatsApp (7744009295)</span>
+              </a>
+              <button
+                onClick={onClose}
+                className="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-[#0F172A] glass-panel hover:bg-white shadow-sm transition-colors"
+              >
+                Back to Website
+              </button>
+            </div>
           </div>
         )}
 

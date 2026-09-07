@@ -75,6 +75,17 @@ export default function Footer({ onOpenBrochure, onOpenVisit }) {
                 </a>
               </div>
               <div className="flex items-center gap-2">
+                <span className="text-emerald-400 font-bold text-xs">WA:</span>
+                <a
+                  href="https://wa.me/917744009295?text=Hello%20I%20am%20interested%20in%20Pharande%20Puneville"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-emerald-400 hover:text-emerald-300 font-mono font-bold"
+                >
+                  +91 7744009295 (WhatsApp)
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-amber-400 flex-shrink-0" />
                 <a href={`mailto:${PROJECT_INFO.email}`} className="text-slate-300 hover:text-amber-400 font-medium">
                   {PROJECT_INFO.email}

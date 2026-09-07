@@ -19,7 +19,7 @@ export default function FloatingContactBar({ onOpenVisit }) {
 
   const openWhatsApp = () => {
     const text = encodeURIComponent("Hello! I am interested in Pharande Puneville (Punawale). Please share latest availability, price sheet, and floor plans.");
-    window.open(`https://wa.me/919890012345?text=${text}`, '_blank');
+    window.open(`https://wa.me/917744009295?text=${text}`, '_blank');
   };
 
   return (

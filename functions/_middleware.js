@@ -51,7 +51,8 @@ class EdgeHeadHandler {
       "@type": "RealEstateAgent",
       "name": "Pharande Puneville Sales Experience",
       "url": "https://pharandepuneville.com",
-      "telephone": isNRI ? "+91-9822000000" : "020-67123456",
+      "telephone": "+91-7744009295",
+      "email": "propsmartrealty@gmail.com",
       "priceRange": "₹ 85 Lakhs - ₹ 1.35 Cr",
       "areaServed": [
         { "@type": "City", "name": "Punawale" },

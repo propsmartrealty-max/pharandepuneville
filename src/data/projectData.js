@@ -9,8 +9,9 @@ export const PROJECT_INFO = {
   towerFloors: "G + 22 to G + 27 Floors",
   openSpace: "60% Greenery & Open Landscaped Realms",
   signatureElement: "22-Ft Elevated Pedestrian Skywalk Connecting Entire Township",
-  phone: "+91 98900 12345",
-  email: "sales@puneville-punawale.com",
+  phone: "+91 7744009295",
+  whatsapp: "+91 7744009295",
+  email: "propsmartrealty@gmail.com",
   possession: "Ready-to-Move & Ongoing Luxury Phases",
   startingPrice: "₹ 85 Lakhs*",
   reraWebsite: "https://maharera.mahaonline.gov.in"
