@@ -15,10 +15,54 @@ const {
   canonicalUrl = "https://pharandepuneville.com/",
 } = Astro.props;
 
-// Rich Structured Schema.org for Google Real Estate & Knowledge Graph
+// Rich Structured Schema.org for Google Real Estate, LocalBusiness & Punawale Knowledge Graph
 const schemaOrg = {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "ApartmentComplex",
+      "@id": "https://pharandepuneville.com/#complex",
+      "name": "Pharande Puneville",
+      "alternateName": ["Puneville Punawale", "Pharande Spaces Puneville", "Puneville by Aedas"],
+      "description": description,
+      "url": canonicalUrl,
+      "telephone": "+91-7744009295",
+      "image": [
+        "https://pharandepuneville.com/images/puneville/hero/banner1.jpg",
+        "https://pharandepuneville.com/images/puneville/gallery/gallery-tower-night.jpg",
+        "https://pharandepuneville.com/images/puneville/gallery/gallery-pool-evening.jpg",
+        "https://pharandepuneville.com/images/puneville/masterplan/masterplan-layout.jpg"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Near Punawale-Ravet BRTS Road, Opposite Mumbai-Pune Expressway",
+        "addressLocality": "Punawale, PCMC",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411033",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 18.6325,
+        "longitude": 73.7438
+      },
+      "hasMap": "https://maps.google.com/?q=Pharande+Puneville+Punawale",
+      "containedInPlace": {
+        "@type": "Place",
+        "name": "Punawale",
+        "containedInPlace": {
+          "@type": "City",
+          "name": "Pimpri-Chinchwad (PCMC), Pune"
+        }
+      },
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "22-Foot Elevated Skywalk", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "4 Olympic-Sized Swimming Pools", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Aedas Masterplanned Clubhouse", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Tennis & Multi-Sport Courts", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "60% Open Landscaped Greens", "value": true }
+      ]
+    },
     {
       "@type": "RealEstateListing",
       "@id": "https://pharandepuneville.com/#listing",
@@ -39,16 +83,16 @@ const schemaOrg = {
       },
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Near Mumbai-Pune Expressway, Punawale",
-        "addressLocality": "PCMC, Pune",
+        "streetAddress": "Near Punawale-Ravet BRTS Road, Opposite Mumbai-Pune Expressway",
+        "addressLocality": "Punawale, PCMC, Pune",
         "addressRegion": "Maharashtra",
         "postalCode": "411033",
         "addressCountry": "IN"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "18.6368",
-        "longitude": "73.7431"
+        "latitude": 18.6325,
+        "longitude": 73.7438
       }
     },
     {
@@ -72,7 +116,15 @@ const schemaOrg = {
           "name": "What configurations are available at Pharande Puneville?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Pharande Puneville offers 2 BHK (752 sq.ft.), 2 BHK Grande (848 sq.ft.), 2.5 BHK with dedicated Work-From-Home Pod (948 sq.ft.), and 3 BHK Imperial Signature Residences (1,172 sq.ft.)."
+            "text": "Pharande Puneville offers 2 BHK Royale (752 sq.ft.), 2 BHK Grande (848 sq.ft.), 2.5 BHK with dedicated Work-From-Home Pod (948 sq.ft.), and 3 BHK Imperial Signature Residences (1,172 sq.ft.)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Pharande Puneville located in Punawale?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pharande Puneville is situated on the Punawale-Ravet BRTS corridor, just 1.2 km (2 minutes) from the Mumbai-Pune Expressway exit and 4.8 km (8-10 minutes) from Hinjawadi IT Park Phase 1, PCMC Pune."
           }
         },
         {
@@ -89,6 +141,14 @@ const schemaOrg = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Pharande Puneville Phase III Cluster D (Wings Q, R, S) is registered under MahaRERA number P52100000044."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Punawale ecosystem advantage for homebuyers and investors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Punawale offers 12.4% YoY capital appreciation, superior air quality with 60% open greens, planned Metro Line 3 connectivity, and high rental yields driven by 400,000+ tech professionals in Hinjawadi."
           }
         }
       ]
@@ -108,10 +168,17 @@ const schemaOrg = {
     <!-- Google Search & Crawl SEO -->
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="keywords" content="Pharande Puneville, Puneville Punawale, Aedas Puneville, flats in Punawale, luxury 2 BHK Punawale, 3 BHK Hinjawadi expressway, Pharande Spaces Pune, PCMC luxury townships" />
+    <meta name="keywords" content="Pharande Puneville, Puneville Punawale, flats in Punawale, Aedas Puneville, luxury 2 BHK Punawale, 3 BHK Hinjawadi expressway, Pharande Spaces Pune, PCMC luxury townships, Punawale real estate" />
     <meta name="author" content="Pharande Spaces" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <link rel="canonical" href={canonicalUrl} />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+    <!-- Geographic Microdata for Google Punawale Local Search -->
+    <meta name="geo.region" content="IN-MH" />
+    <meta name="geo.placename" content="Punawale, PCMC, Pune" />
+    <meta name="geo.position" content="18.6325;73.7438" />
+    <meta name="ICBM" content="18.6325, 73.7438" />
 
     <!-- Open Graph / Facebook / WhatsApp Preview -->
     <meta property="og:type" content="website" />

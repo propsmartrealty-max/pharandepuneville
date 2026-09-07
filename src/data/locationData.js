@@ -58,5 +58,41 @@ export const LOCATION_HIGHLIGHTS = {
     { label: "Wakad / Bhumkar", mins: 6, distance: "3.2 km", savedHrsYear: "Zero toll hassle, direct BRTS speed" },
     { label: "Expressway to Mumbai", mins: 2, distance: "1.2 km", savedHrsYear: "Immediate signal-free ramp access" },
     { label: "Phoenix Mall Millennium", mins: 10, distance: "6.0 km", savedHrsYear: "World-class retail & dining at your doorstep" }
-  ]
+  ],
+  punawaleEcosystem: {
+    title: "Punawale: Pune's Premier High-Appreciation Residential Hub",
+    description: "Nestled between the Mumbai-Pune Expressway and Hinjawadi IT corridor, Punawale has emerged as PCMC's fastest appreciating residential micro-market with world-class civil infrastructure, clean air corridors, and rapid transit access.",
+    keyAdvantages: [
+      {
+        title: "2 Mins to Expressway",
+        subtitle: "Signal-Free Ramp",
+        description: "Instant access to the Mumbai-Pune Expressway exit without navigating city bottlenecks, saving up to 45 minutes on Mumbai/Lonavala trips.",
+        badge: "Highway Gateway"
+      },
+      {
+        title: "Proposed Punawale Metro",
+        subtitle: "Pune Metro Line 3 Link",
+        description: "Direct connectivity to the Hinjawadi-Shivajinagar Metro corridor and planned BRTS integration for effortless daily commuting.",
+        badge: "Transit Hub"
+      },
+      {
+        title: "Hinjawadi Silicon Valley",
+        subtitle: "4.8 km to Phase 1",
+        description: "Home to 400,000+ IT professionals across Infosys, TCS, Wipro, Cognizant, and Tech Mahindra, driving consistent high rental yields.",
+        badge: "Employment Engine"
+      },
+      {
+        title: "Educational & Healthcare Belt",
+        subtitle: "3 km Radius",
+        description: "Proximity to Lotus Business School, Indira Institutes, JSPM, D.Y. Patil, and tertiary hospitals like Aditya Birla Memorial Hospital.",
+        badge: "Social Infrastructure"
+      }
+    ],
+    growthMetrics: [
+      { metric: "12.4%*", label: "YoY Capital Appreciation Rate", highlight: "Outperforming Western Pune average" },
+      { metric: "₹28k-₹42k", label: "Monthly Rental Yield Range", highlight: "High demand from Hinjawadi tech workforce" },
+      { metric: "60%", label: "Open Greens & Buffer Zones", highlight: "Superior Air Quality Index (AQI) vs Central Pune" },
+      { metric: "100%", label: "PCMC Water & Infrastructure", highlight: "Under PCMC Municipal Smart City Development" }
+    ]
+  }
 };

@@ -23,40 +23,53 @@ class EdgeHeadHandler {
       { html: true }
     );
 
-    // 2. Real-time Edge Telemetry Meta
+    // 2. Real-time Edge Telemetry & Punawale Geographic Meta
     element.append(
-      `<meta name="cf-edge-location" content="${city}, ${country} via Cloudflare ${colo}" />`,
-      { html: true }
-    );
-    element.append(
-      `<meta name="cf-edge-status" content="Edge-HTMLRewriter-Optimized" />`,
+      `<meta name="geo.region" content="IN-MH" />` +
+      `<meta name="geo.placename" content="Punawale, PCMC, Pune" />` +
+      `<meta name="geo.position" content="18.6325;73.7438" />` +
+      `<meta name="ICBM" content="18.6325, 73.7438" />` +
+      `<meta name="cf-edge-location" content="${city}, ${country} via Cloudflare ${colo}" />` +
+      `<meta name="cf-edge-status" content="Edge-HTMLRewriter-Hardened" />` +
+      `<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />`,
       { html: true }
     );
 
-    // 3. Dynamic Crawler / Bot Signals
+    // 3. Dynamic Crawler / Search Bot Directives
     if (this.isBot) {
       element.append(
-        `<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />`,
-        { html: true }
-      );
-      element.append(
-        `<meta name="bingbot" content="index, follow" />`,
+        `<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />` +
+        `<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />`,
         { html: true }
       );
     }
 
-    // 4. Edge-Injected Real-Time Schema.org Geo-Tailoring
+    // 4. Edge-Injected Real-Time Schema.org Punawale Ecosystem Geo-Tailoring
     const dynamicSchema = {
       "@context": "https://schema.org",
       "@type": "RealEstateAgent",
+      "@id": "https://pharandepuneville.com/#edge-agent",
       "name": "Pharande Puneville Sales Experience",
       "url": "https://pharandepuneville.com",
       "telephone": "+91-7744009295",
       "email": "propsmartrealty@gmail.com",
       "priceRange": "₹ 85 Lakhs - ₹ 1.35 Cr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Near Punawale-Ravet BRTS Road, Opposite Mumbai-Pune Expressway",
+        "addressLocality": "Punawale, PCMC",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411033",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 18.6325,
+        "longitude": 73.7438
+      },
       "areaServed": [
-        { "@type": "City", "name": "Punawale" },
-        { "@type": "City", "name": "PCMC" },
+        { "@type": "AdministrativeArea", "name": "Punawale" },
+        { "@type": "City", "name": "Pimpri-Chinchwad (PCMC)" },
         { "@type": "City", "name": "Pune" },
         { "@type": "City", "name": "Mumbai" },
         ...(isNRI ? [{ "@type": "Country", "name": country }] : [])
@@ -140,7 +153,23 @@ export async function onRequest(context) {
   const isNRI = country !== 'IN';
 
   const userAgent = request.headers.get('user-agent') || '';
-  const isBot = /bot|googlebot|crawler|spider|robot|crawling|bingbot|facebookexternalhit|whatsapp|twitterbot|linkedinbot/i.test(userAgent);
+  
+  // 1. Edge Threat Defense: Block aggressive scraper bots from consuming bandwidth
+  const isBadBot = /bytespider|petalbot|scrapy|sqlmap|nikto|mj12bot|dotbot|ahrefsbot|semrushbot/i.test(userAgent);
+  if (isBadBot) {
+    return new Response('Access Denied: Enterprise Bot Protection Policy Enforced at Edge.', {
+      status: 403,
+      headers: {
+        'Content-Type': 'text/plain',
+        'X-Robots-Tag': 'noindex, nofollow, noarchive',
+        'X-Edge-Protection': 'Cloudflare-Pages-WAF'
+      }
+    });
+  }
+
+  const isSearchEngine = /googlebot|bingbot|applebot|duckduckbot|slurp|yandex|baiduspider/i.test(userAgent);
+  const isSocialBot = /facebookexternalhit|whatsapp|twitterbot|linkedinbot|telegrambot|pinterest/i.test(userAgent);
+  const isBot = isSearchEngine || isSocialBot;
 
   // Fetch response from next handler
   const response = await next();
@@ -162,6 +191,8 @@ export async function onRequest(context) {
   newHeaders.set('X-Visitor-Country', country);
   newHeaders.set('X-Visitor-NRI', isNRI ? 'true' : 'false');
   newHeaders.set('X-Edge-Bot-Detected', isBot ? 'true' : 'false');
+  newHeaders.set('X-Punawale-Ecosystem', 'Golden-Growth-Corridor-PCMC');
+  newHeaders.set('Link', '<https://pharandepuneville.com/>; rel="canonical"');
 
   // Transform HTML on-the-fly using Cloudflare C++ Streaming HTMLRewriter
   const rewriter = new HTMLRewriter()

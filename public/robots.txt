@@ -1,0 +1,60 @@
+# Robots.txt for Pharande Puneville (https://pharandepuneville.com)
+# Enterprise Edge Hardened Policy & Search Crawl Directives
+
+# -----------------------------------------------------------------------------
+# 1. Primary Verified Search Engines (Full Access with Asset Crawling)
+# -----------------------------------------------------------------------------
+User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Bingbot
+User-agent: Applebot
+User-agent: DuckDuckBot
+User-agent: Slurp
+User-agent: Baiduspider
+User-agent: YandexBot
+Allow: /
+Allow: /images/
+Allow: /_astro/*.css
+Allow: /_astro/*.js
+Allow: /sitemap.xml
+Disallow: /api/
+Disallow: /*?*
+
+# -----------------------------------------------------------------------------
+# 2. Social Media Preview Crawlers (OpenGraph / Rich Snippets)
+# -----------------------------------------------------------------------------
+User-agent: Twitterbot
+User-agent: facebookexternalhit
+User-agent: WhatsApp
+User-agent: LinkedInBot
+User-agent: TelegramBot
+User-agent: Pinterestbot
+Allow: /
+Allow: /images/
+
+# -----------------------------------------------------------------------------
+# 3. Defensive Bot Defense: Block Aggressive Scrapers & Scraping Bots
+# -----------------------------------------------------------------------------
+User-agent: Bytespider
+User-agent: PetalBot
+User-agent: Scrapy
+User-agent: DotBot
+User-agent: MJ12bot
+User-agent: SemrushBot
+User-agent: AhrefsBot
+User-agent: CCBot
+User-agent: GPTBot
+Disallow: /
+
+# -----------------------------------------------------------------------------
+# 4. Default Rule for All Other Standard Crawlers
+# -----------------------------------------------------------------------------
+User-agent: *
+Allow: /
+Allow: /images/
+Disallow: /api/
+
+# -----------------------------------------------------------------------------
+# 5. Global XML Sitemap Index
+# -----------------------------------------------------------------------------
+Sitemap: https://pharandepuneville.com/sitemap.xml

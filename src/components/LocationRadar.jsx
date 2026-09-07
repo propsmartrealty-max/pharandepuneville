@@ -134,6 +134,74 @@ export default function LocationRadar({ onOpenVisit }) {
           ))}
         </div>
 
+        {/* Punawale Ecosystem & High-Growth Micro-Market Spotlight */}
+        {LOCATION_HIGHLIGHTS.punawaleEcosystem && (
+          <div className="mb-14 p-6 sm:p-10 rounded-3xl bg-gradient-to-br from-[#1E293B] via-[#0F172A] to-[#020617] text-white shadow-2xl relative overflow-hidden border border-amber-400/20">
+            {/* Background Glow */}
+            <div className="absolute top-0 right-0 w-96 h-96 bg-[#C59B27]/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
+
+            <div className="relative z-10">
+              {/* Header */}
+              <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+                <div>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#C59B27]/20 border border-[#C59B27]/40 text-[#F59E0B] text-xs font-semibold uppercase tracking-wider mb-2">
+                    <span>🌟 Micro-Market Intelligence</span>
+                  </div>
+                  <h3 className="text-2xl sm:text-3xl font-display font-bold text-white tracking-tight">
+                    {LOCATION_HIGHLIGHTS.punawaleEcosystem.title}
+                  </h3>
+                </div>
+                <p className="text-xs sm:text-sm text-slate-300 max-w-xl font-normal leading-relaxed">
+                  {LOCATION_HIGHLIGHTS.punawaleEcosystem.description}
+                </p>
+              </div>
+
+              {/* 4 Pillars of Punawale Advantage */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                {LOCATION_HIGHLIGHTS.punawaleEcosystem.keyAdvantages.map((item, idx) => (
+                  <div 
+                    key={idx}
+                    className="p-5 rounded-2xl bg-white/[0.05] border border-white/10 hover:border-amber-400/40 hover:bg-white/[0.08] transition-all flex flex-col justify-between group"
+                  >
+                    <div>
+                      <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-amber-400 block mb-2">
+                        {item.badge}
+                      </span>
+                      <h4 className="text-base font-bold text-white mb-1 group-hover:text-amber-200 transition-colors">
+                        {item.title}
+                      </h4>
+                      <span className="text-xs font-mono text-slate-400 block mb-2">
+                        {item.subtitle}
+                      </span>
+                      <p className="text-xs text-slate-300 leading-relaxed font-normal">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Market Metrics Strip */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-white/10">
+                {LOCATION_HIGHLIGHTS.punawaleEcosystem.growthMetrics.map((m, idx) => (
+                  <div key={idx} className="p-3.5 rounded-xl bg-white/[0.03] border border-white/5">
+                    <span className="text-xl sm:text-2xl font-display font-black text-amber-400 block">
+                      {m.metric}
+                    </span>
+                    <span className="text-[11px] font-bold text-white block mt-0.5">
+                      {m.label}
+                    </span>
+                    <span className="text-[10px] text-slate-400 block mt-0.5">
+                      {m.highlight}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Location Address & Map CTA Card */}
         <div className="rounded-3xl p-6 sm:p-8 glass-panel shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-start gap-4">
