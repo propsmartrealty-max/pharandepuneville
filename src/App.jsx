@@ -18,16 +18,19 @@ import FloatingContactBar from './components/FloatingContactBar';
 
 export default function App() {
   const [modalOpen, setModalOpen] = useState(false);
-  const [modalMode, setModalMode] = useState('visit'); // 'visit' | 'brochure'
+  const [modalMode, setModalMode] = useState('visit'); // 'visit' | 'brochure' | 'pricing' | 'cluster'
+  const [modalConfig, setModalConfig] = useState(null);
   const [calculatorPrefill, setCalculatorPrefill] = useState(null);
 
-  const handleOpenBrochure = () => {
+  const handleOpenBrochure = (config = null) => {
     setModalMode('brochure');
+    if (typeof config === 'string') setModalConfig(config);
     setModalOpen(true);
   };
 
-  const handleOpenVisit = () => {
+  const handleOpenVisit = (config = null) => {
     setModalMode('visit');
+    if (typeof config === 'string') setModalConfig(config);
     setModalOpen(true);
   };
 
@@ -137,6 +140,7 @@ export default function App() {
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
         mode={modalMode}
+        initialConfig={modalConfig}
       />
     </div>
   );
