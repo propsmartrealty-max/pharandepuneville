@@ -14,12 +14,12 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
     announcement: "Looking for 2 BHK Homes in Punawale? Starting ₹85L* with exclusive Expressway proximity and 60% open greens.",
     price: "₹ 85 Lakhs - ₹ 96 Lakhs*",
     carpetArea: "752 - 848 sq.ft.",
-    ogImage: "https://pharandepuneville.com/images/puneville/floorplans/floorplan-2bhk-classic.jpg",
+    ogImage: "https://pharande-puneville.in/images/puneville/floorplans/floorplan-2bhk-classic.jpg",
     schemaType: "Apartment",
     breadcrumbs: [
-      { name: "Home", url: "https://pharandepuneville.com/" },
-      { name: "Configurations", url: "https://pharandepuneville.com/#residences" },
-      { name: "2 BHK Flats in Punawale", url: "https://pharandepuneville.com/2-bhk-flats-in-punawale" }
+      { name: "Home", url: "https://pharande-puneville.in/" },
+      { name: "Configurations", url: "https://pharande-puneville.in/#residences" },
+      { name: "2 BHK Flats in Punawale", url: "https://pharande-puneville.in/2-bhk-flats-in-punawale" }
     ],
     faq: [
       {
@@ -43,12 +43,12 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
     announcement: "Spacious 3 BHK Signature Homes: 1,172 sq.ft. carpet area starting ₹1.25 Cr* with private lobby feeling & panoramic views.",
     price: "₹ 1.25 Cr - ₹ 1.35 Cr*",
     carpetArea: "1,172 sq.ft.",
-    ogImage: "https://pharandepuneville.com/images/puneville/floorplans/floorplan-3bhk-master.jpg",
+    ogImage: "https://pharande-puneville.in/images/puneville/floorplans/floorplan-3bhk-master.jpg",
     schemaType: "Apartment",
     breadcrumbs: [
-      { name: "Home", url: "https://pharandepuneville.com/" },
-      { name: "Configurations", url: "https://pharandepuneville.com/#residences" },
-      { name: "3 BHK Luxury Flats in Punawale", url: "https://pharandepuneville.com/3-bhk-flats-in-punawale" }
+      { name: "Home", url: "https://pharande-puneville.in/" },
+      { name: "Configurations", url: "https://pharande-puneville.in/#residences" },
+      { name: "3 BHK Luxury Flats in Punawale", url: "https://pharande-puneville.in/3-bhk-flats-in-punawale" }
     ],
     faq: [
       {
@@ -72,12 +72,12 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
     announcement: "Engineered for Tech Professionals: 948 sq.ft. 2.5 BHK with private acoustic study/office pod starting ₹1.08 Cr*.",
     price: "₹ 1.08 Cr*",
     carpetArea: "948 sq.ft.",
-    ogImage: "https://pharandepuneville.com/images/puneville/floorplans/floorplan-2.5bhk-luxury.jpg",
+    ogImage: "https://pharande-puneville.in/images/puneville/floorplans/floorplan-2.5bhk-luxury.jpg",
     schemaType: "Apartment",
     breadcrumbs: [
-      { name: "Home", url: "https://pharandepuneville.com/" },
-      { name: "Configurations", url: "https://pharandepuneville.com/#residences" },
-      { name: "2.5 BHK Flats in Punawale", url: "https://pharandepuneville.com/2.5-bhk-flats-in-punawale" }
+      { name: "Home", url: "https://pharande-puneville.in/" },
+      { name: "Configurations", url: "https://pharande-puneville.in/#residences" },
+      { name: "2.5 BHK Flats in Punawale", url: "https://pharande-puneville.in/2.5-bhk-flats-in-punawale" }
     ],
     faq: [
       {
@@ -97,12 +97,12 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
     announcement: "Beat the Hinjawadi commute: Just 4.8 km to Phase 1 via signal-free BRTS corridors, saving 140+ hours per year.",
     price: "₹ 85 Lakhs - ₹ 1.35 Cr*",
     carpetArea: "752 - 1,172 sq.ft.",
-    ogImage: "https://pharandepuneville.com/images/puneville/masterplan/location-map.jpg",
+    ogImage: "https://pharande-puneville.in/images/puneville/masterplan/location-map.jpg",
     schemaType: "ApartmentComplex",
     breadcrumbs: [
-      { name: "Home", url: "https://pharandepuneville.com/" },
-      { name: "Location", url: "https://pharandepuneville.com/#location" },
-      { name: "Flats near Hinjawadi IT Park", url: "https://pharandepuneville.com/flats-near-hinjawadi-it-park" }
+      { name: "Home", url: "https://pharande-puneville.in/" },
+      { name: "Location", url: "https://pharande-puneville.in/#location" },
+      { name: "Flats near Hinjawadi IT Park", url: "https://pharande-puneville.in/flats-near-hinjawadi-it-park" }
     ],
     faq: [
       {
@@ -122,12 +122,12 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
     announcement: "Instant Highway Gateway: Located 1.2 km from the Expressway exit, connecting you effortlessly to Mumbai, Lonavala, and Pune City.",
     price: "₹ 85 Lakhs - ₹ 1.35 Cr*",
     carpetArea: "752 - 1,172 sq.ft.",
-    ogImage: "https://pharandepuneville.com/images/puneville/hero/banner1.jpg",
+    ogImage: "https://pharande-puneville.in/images/puneville/hero/banner1.jpg",
     schemaType: "ApartmentComplex",
     breadcrumbs: [
-      { name: "Home", url: "https://pharandepuneville.com/" },
-      { name: "Location", url: "https://pharandepuneville.com/#location" },
-      { name: "Flats near Mumbai-Pune Expressway", url: "https://pharandepuneville.com/flats-near-mumbai-pune-expressway" }
+      { name: "Home", url: "https://pharande-puneville.in/" },
+      { name: "Location", url: "https://pharande-puneville.in/#location" },
+      { name: "Flats near Mumbai-Pune Expressway", url: "https://pharande-puneville.in/flats-near-mumbai-pune-expressway" }
     ],
     faq: [
       {
@@ -147,12 +147,12 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
     announcement: "Wakad-Grade Infrastructure at Punawale Value: 10 mins from Phoenix Mall of the Millennium and Wakad-Ravet BRTS corridor.",
     price: "₹ 85 Lakhs - ₹ 1.35 Cr*",
     carpetArea: "752 - 1,172 sq.ft.",
-    ogImage: "https://pharandepuneville.com/images/puneville/gallery/gallery-tower-night.jpg",
+    ogImage: "https://pharande-puneville.in/images/puneville/gallery/gallery-tower-night.jpg",
     schemaType: "ApartmentComplex",
     breadcrumbs: [
-      { name: "Home", url: "https://pharandepuneville.com/" },
-      { name: "Location", url: "https://pharandepuneville.com/#location" },
-      { name: "Flats near Wakad & PCMC", url: "https://pharandepuneville.com/flats-near-wakad-pcmc" }
+      { name: "Home", url: "https://pharande-puneville.in/" },
+      { name: "Location", url: "https://pharande-puneville.in/#location" },
+      { name: "Flats near Wakad & PCMC", url: "https://pharande-puneville.in/flats-near-wakad-pcmc" }
     ],
     faq: [
       {
@@ -172,12 +172,12 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
     announcement: "Fresh Inventory in Cluster D: Secure newly launched 2 & 2.5 BHK units in Wings Q, R, S registered under MahaRERA P52100000044.",
     price: "₹ 85 Lakhs - ₹ 1.08 Cr*",
     carpetArea: "752 - 948 sq.ft.",
-    ogImage: "https://pharandepuneville.com/images/puneville/masterplan/masterplan-layout.jpg",
+    ogImage: "https://pharande-puneville.in/images/puneville/masterplan/masterplan-layout.jpg",
     schemaType: "ApartmentComplex",
     breadcrumbs: [
-      { name: "Home", url: "https://pharandepuneville.com/" },
-      { name: "Masterplan", url: "https://pharandepuneville.com/#masterplan" },
-      { name: "Cluster D Wings Q, R, S", url: "https://pharandepuneville.com/pharande-puneville-cluster-d" }
+      { name: "Home", url: "https://pharande-puneville.in/" },
+      { name: "Masterplan", url: "https://pharande-puneville.in/#masterplan" },
+      { name: "Cluster D Wings Q, R, S", url: "https://pharande-puneville.in/pharande-puneville-cluster-d" }
     ],
     faq: [
       {
@@ -197,12 +197,12 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
     announcement: "Built on Trust: Pharande Spaces brings 3 decades of architectural excellence, delivering 10,000+ homes across PCMC & Pune.",
     price: "₹ 85 Lakhs - ₹ 1.35 Cr*",
     carpetArea: "752 - 1,172 sq.ft.",
-    ogImage: "https://pharandepuneville.com/images/puneville/puneville-monument-logo.svg",
+    ogImage: "https://pharande-puneville.in/images/puneville/puneville-monument-logo.svg",
     schemaType: "RealEstateAgent",
     breadcrumbs: [
-      { name: "Home", url: "https://pharandepuneville.com/" },
-      { name: "Developer Legacy", url: "https://pharandepuneville.com/#developer" },
-      { name: "Pharande Spaces Punawale", url: "https://pharandepuneville.com/pharande-spaces-punawale" }
+      { name: "Home", url: "https://pharande-puneville.in/" },
+      { name: "Developer Legacy", url: "https://pharande-puneville.in/#developer" },
+      { name: "Pharande Spaces Punawale", url: "https://pharande-puneville.in/pharande-spaces-punawale" }
     ],
     faq: [
       {
@@ -222,12 +222,12 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
     announcement: "Global NRI Desk: Timezone-tailored virtual walkthroughs, FEMA assistance, and high rental yield management for overseas buyers.",
     price: "$102,000 - $162,000 USD (₹85L - ₹1.35 Cr)",
     carpetArea: "752 - 1,172 sq.ft.",
-    ogImage: "https://pharandepuneville.com/images/puneville/gallery/gallery-aerial-towers.jpg",
+    ogImage: "https://pharande-puneville.in/images/puneville/gallery/gallery-aerial-towers.jpg",
     schemaType: "RealEstateListing",
     breadcrumbs: [
-      { name: "Home", url: "https://pharandepuneville.com/" },
-      { name: "Investor Desk", url: "https://pharandepuneville.com/#financials" },
-      { name: "NRI Property Investment Pune", url: "https://pharandepuneville.com/nri-investment-punawale-pune" }
+      { name: "Home", url: "https://pharande-puneville.in/" },
+      { name: "Investor Desk", url: "https://pharande-puneville.in/#financials" },
+      { name: "NRI Property Investment Pune", url: "https://pharande-puneville.in/nri-investment-punawale-pune" }
     ],
     faq: [
       {

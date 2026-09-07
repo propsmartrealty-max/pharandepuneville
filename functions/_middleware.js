@@ -86,8 +86,8 @@ class EdgeHeadHandler {
         "@type": this.pSeo.schemaType || "Apartment",
         "name": this.pSeo.title,
         "description": this.pSeo.description,
-        "url": `https://pharandepuneville.com/${this.pSeo.slug}`,
-        "image": this.pSeo.ogImage || "https://pharandepuneville.com/images/puneville/hero/banner1.jpg",
+        "url": `https://pharande-puneville.in/${this.pSeo.slug}`,
+        "image": this.pSeo.ogImage || "https://pharande-puneville.in/images/puneville/hero/banner1.jpg",
         "offers": {
           "@type": "Offer",
           "priceCurrency": "INR",
@@ -133,9 +133,9 @@ class EdgeHeadHandler {
       const dynamicSchema = {
         "@context": "https://schema.org",
         "@type": "RealEstateAgent",
-        "@id": "https://pharandepuneville.com/#edge-agent",
+        "@id": "https://pharande-puneville.in/#edge-agent",
         "name": "Pharande Puneville Sales Experience",
-        "url": "https://pharandepuneville.com",
+        "url": "https://pharande-puneville.in",
         "telephone": "+91-7744009295",
         "email": "propsmartrealty@gmail.com",
         "priceRange": "₹ 85 Lakhs - ₹ 1.35 Cr",
@@ -287,7 +287,7 @@ export async function onRequest(context) {
 
   // 2. Detect Programmatic SEO Target
   const pSeo = getProgrammaticSeo(url.pathname) || (url.searchParams.get('pseo') ? getProgrammaticSeo('/' + url.searchParams.get('pseo')) : null);
-  const canonicalUrl = pSeo ? `https://pharandepuneville.com/${pSeo.slug}` : 'https://pharandepuneville.com/';
+  const canonicalUrl = pSeo ? `https://pharande-puneville.in/${pSeo.slug}` : 'https://pharande-puneville.in/';
 
   const isSearchEngine = /googlebot|bingbot|applebot|duckduckbot|slurp|yandex|baiduspider/i.test(userAgent);
   const isSocialBot = /facebookexternalhit|whatsapp|twitterbot|linkedinbot|telegrambot|pinterest/i.test(userAgent);

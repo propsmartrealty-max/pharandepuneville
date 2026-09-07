@@ -1,5 +1,5 @@
 # =============================================================================
-# Robots.txt for Pharande Puneville (https://pharandepuneville.com)
+# Robots.txt for Pharande Puneville (https://pharande-puneville.in)
 # Enterprise Edge Hardened Policy, AI Scraper Defense & Search Crawl Directives
 # =============================================================================
 
@@ -88,5 +88,6 @@ Disallow: /*.json$
 # -----------------------------------------------------------------------------
 # 6. Global Host & XML Sitemap Declarations
 # -----------------------------------------------------------------------------
-Host: https://pharandepuneville.com
-Sitemap: https://pharandepuneville.com/sitemap.xml
+Host: https://pharande-puneville.in
+Sitemap: https://pharande-puneville.in/sitemap.xml
+
