@@ -137,7 +137,6 @@ class EdgeHeadHandler {
         "name": "Pharande Puneville Sales Experience",
         "url": "https://pharande-puneville.in",
         "telephone": "+91-7744009295",
-        "email": "propsmartrealty@gmail.com",
         "priceRange": "₹ 85 Lakhs - ₹ 1.35 Cr",
         "address": {
           "@type": "PostalAddress",

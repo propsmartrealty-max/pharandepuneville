@@ -11,7 +11,6 @@ export const PROJECT_INFO = {
   signatureElement: "22-Ft Elevated Pedestrian Skywalk Connecting Entire Township",
   phone: "+91 7744009295",
   whatsapp: "+91 7744009295",
-  email: "propsmartrealty@gmail.com",
   possession: "Ready-to-Move & Ongoing Luxury Phases",
   startingPrice: "₹ 85 Lakhs*",
   reraWebsite: "https://maharera.mahaonline.gov.in"

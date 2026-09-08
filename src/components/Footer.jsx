@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, MapPin, Phone, Mail, ExternalLink, Heart } from 'lucide-react';
+import { ShieldCheck, MapPin, Phone, Clock, ExternalLink, Heart } from 'lucide-react';
 import { PROJECT_INFO, CLUSTERS_DATA } from '../data/projectData';
 import PunevilleLogo from './PunevilleLogo';
 import EdgeGeoStatus from './EdgeGeoStatus';
@@ -86,10 +86,10 @@ export default function Footer({ onOpenBrochure, onOpenVisit }) {
                 </a>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                <a href={`mailto:${PROJECT_INFO.email}`} className="text-slate-300 hover:text-amber-400 font-medium">
-                  {PROJECT_INFO.email}
-                </a>
+                <Clock className="w-4 h-4 text-amber-400 flex-shrink-0" />
+                <span className="text-slate-300 font-medium">
+                  Experience Center: 9:30 AM - 7:30 PM
+                </span>
               </div>
 
               <div className="pt-2 flex flex-col gap-2">

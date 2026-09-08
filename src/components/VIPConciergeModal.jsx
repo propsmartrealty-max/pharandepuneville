@@ -443,7 +443,7 @@ export default function VIPConciergeModal({ isOpen, onClose, mode = 'visit', ini
               <div className="pt-2 flex items-center justify-between text-[10px] text-[#64748B]">
                 <span className="flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Propsmart Realty Official Desk • Zero Brokerage</span>
+                  <span>Pharande Puneville Official Desk • Direct Developer Pricing</span>
                 </span>
                 <span>Direct Office: +91 7744009295</span>
               </div>
@@ -461,7 +461,7 @@ export default function VIPConciergeModal({ isOpen, onClose, mode = 'visit', ini
             </h3>
 
             <p className="text-xs sm:text-sm text-[#334155] font-normal max-w-sm mx-auto mb-5">
-              Thank you, <strong className="text-[#845D12]">{formData.name}</strong>. Your enquiry for <strong className="text-[#0F172A]">{selectedConfig}</strong> has been logged and dispatched to <strong className="text-[#0F172A]">propsmartrealty@gmail.com</strong>.
+              Thank you, <strong className="text-[#845D12]">{formData.name}</strong>. Your enquiry for <strong className="text-[#0F172A]">{selectedConfig}</strong> has been confirmed. Our Senior Relationship Director will contact you shortly.
             </p>
 
             {/* Tracking & Telemetry Card */}
@@ -472,7 +472,7 @@ export default function VIPConciergeModal({ isOpen, onClose, mode = 'visit', ini
               </div>
               <div className="text-[#64748B] flex justify-between">
                 <span>Assigned Director:</span>
-                <span className="text-[#059669] font-bold">Propsmart Priority Relationship Manager</span>
+                <span className="text-[#059669] font-bold">Senior Relationship Director</span>
               </div>
               {leadRef && (
                 <div className="text-[#64748B] flex justify-between pt-1 border-t border-slate-200">
@@ -483,7 +483,7 @@ export default function VIPConciergeModal({ isOpen, onClose, mode = 'visit', ini
               {edgeNode && (
                 <div className="text-[10px] text-[#64748B] flex justify-between">
                   <span>Edge Telemetry:</span>
-                  <span className="font-mono text-[#059669]">{edgeNode} (&lt;5ms) • Lead Dispatched</span>
+                  <span className="font-mono text-[#059669]">{edgeNode} (&lt;5ms) • Lead Confirmed</span>
                 </div>
               )}
             </div>
@@ -492,7 +492,7 @@ export default function VIPConciergeModal({ isOpen, onClose, mode = 'visit', ini
             <div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 max-w-md mx-auto mb-3">
               <a
                 href={`https://wa.me/917744009295?text=${encodeURIComponent(
-                  `Hello Propsmart Realty, I have submitted an enquiry for Pharande Puneville (Ref: ${leadRef || 'Direct'}). Name: ${formData.name}, Config: ${selectedConfig}, Phone: ${formData.phone}`
+                  `Hello Pharande Puneville Team, I have submitted an enquiry (Ref: ${leadRef || 'Direct'}). Name: ${formData.name}, Config: ${selectedConfig}, Phone: ${formData.phone}`
                 )}`}
                 target="_blank"
                 rel="noreferrer"

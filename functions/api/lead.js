@@ -139,7 +139,7 @@ export async function onRequestPost(context) {
       }
     };
 
-    // 7. Automated Email Dispatch to propsmartrealty@gmail.com via Cloudflare Edge
+    // 7. Automated Email Dispatch via Cloudflare Edge
     const targetEmail = env?.LEAD_NOTIFICATION_EMAIL || 'propsmartrealty@gmail.com';
     const emailSubject = `🚨 New Puneville Lead: ${enrichedLead.name} (${enrichedLead.configuration}) - ${enrichedLead.phone}`;
 
@@ -147,7 +147,7 @@ export async function onRequestPost(context) {
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #E2D9CC; border-radius: 12px; background: #FAF7F2; color: #0F172A;">
         <div style="text-align: center; border-bottom: 2px solid #C59B27; padding-bottom: 16px; margin-bottom: 20px;">
           <h2 style="color: #7A560D; margin: 0;">🏛️ Pharande Puneville VIP Lead</h2>
-          <p style="margin: 5px 0 0 0; font-size: 12px; color: #64748B;">Propsmart Realty Lead Dispatch Engine</p>
+          <p style="margin: 5px 0 0 0; font-size: 12px; color: #64748B;">Pharande Puneville Edge Lead Engine</p>
         </div>
         
         <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
@@ -193,12 +193,12 @@ export async function onRequestPost(context) {
         </table>
         
         <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #E2D9CC; font-size: 11px; text-align: center; color: #94A3B8;">
-          Sent automatically via Cloudflare Edge Lead Engine for Propsmart Realty (${targetEmail})
+          Sent automatically via Pharande Puneville Cloudflare Edge Lead Engine
         </div>
       </div>
     `;
 
-    // 7. Dispatch email to propsmartrealty@gmail.com via SendGrid v3 API
+    // 7. Dispatch email via SendGrid v3 API
     const sendgridApiKey = env?.SENDGRID_API_KEY;
     const sendgridFromEmail = env?.SENDGRID_FROM_EMAIL || 'propsmartrealty@gmail.com';
     const resendApiKey = env?.RESEND_API_KEY;
@@ -214,7 +214,7 @@ export async function onRequestPost(context) {
           body: JSON.stringify({
             personalizations: [
               {
-                to: [{ email: targetEmail, name: 'Propsmart Realty VIP Desk' }],
+                to: [{ email: targetEmail, name: 'Pharande Puneville Sales Desk' }],
               },
             ],
             from: {
@@ -283,8 +283,7 @@ export async function onRequestPost(context) {
     return new Response(JSON.stringify({
       success: true,
       leadRef,
-      message: 'VIP Tour invitation confirmed. Priority Relationship Director assigned.',
-      dispatchedTo: targetEmail,
+      message: 'VIP Tour invitation confirmed. Senior Relationship Director assigned.',
       edgeProcessedAt: colo,
       isNRI
     }), { status: 200, headers: corsHeaders });
