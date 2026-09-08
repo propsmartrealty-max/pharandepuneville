@@ -1,0 +1,20 @@
+{
+  "name": "Pharande Puneville Luxury Residences",
+  "short_name": "Puneville",
+  "description": "28-Acre Integrated Township in Punawale, PCMC Pune designed by Aedas Architects.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#0F172A",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/puneville/puneville-monument-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["real estate", "lifestyle", "business"],
+  "lang": "en-IN"
+}

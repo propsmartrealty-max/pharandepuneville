@@ -46,6 +46,12 @@
   X-Robots-Tag: all
   Access-Control-Allow-Origin: *
 
+/site.webmanifest
+  Content-Type: application/manifest+json; charset=UTF-8
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  CDN-Cache-Control: max-age=86400
+  Access-Control-Allow-Origin: *
+
 # 5. Strict Zero-Cache & Security Isolation for Edge Dynamic APIs
 /api/*
   Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
