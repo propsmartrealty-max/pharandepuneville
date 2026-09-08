@@ -198,33 +198,74 @@ export async function onRequestPost(context) {
       </div>
     `;
 
-    // Dispatch email to propsmartrealty@gmail.com asynchronously
-    context.waitUntil(
-      fetch('https://api.mailchannels.net/tx/v1/send', {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({
-          personalizations: [
-            {
-              to: [{ email: targetEmail, name: 'Propsmart Realty Leads' }],
-            },
-          ],
-          from: {
-            email: 'leads@pharandepuneville.com',
-            name: 'Pharande Puneville Edge Portal',
+    // 7. Dispatch email to propsmartrealty@gmail.com via SendGrid v3 API
+    const sendgridApiKey = env?.SENDGRID_API_KEY;
+    const sendgridFromEmail = env?.SENDGRID_FROM_EMAIL || 'leads@pharande-puneville.in';
+    const resendApiKey = env?.RESEND_API_KEY;
+
+    if (sendgridApiKey) {
+      context.waitUntil(
+        fetch('https://api.sendgrid.com/v3/mail/send', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${sendgridApiKey.trim()}`,
+            'Content-Type': 'application/json',
           },
-          subject: emailSubject,
-          content: [
-            {
-              type: 'text/html',
-              value: emailHtml,
+          body: JSON.stringify({
+            personalizations: [
+              {
+                to: [{ email: targetEmail, name: 'Propsmart Realty VIP Desk' }],
+              },
+            ],
+            from: {
+              email: sendgridFromEmail,
+              name: 'Pharande Puneville VIP Leads',
             },
-          ],
-        }),
-      }).catch((err) => {
-        console.error('MailChannels dispatch error:', err);
-      })
-    );
+            reply_to: {
+              email: enrichedLead.email && enrichedLead.email.includes('@') ? enrichedLead.email : targetEmail,
+              name: enrichedLead.name,
+            },
+            subject: emailSubject,
+            content: [
+              {
+                type: 'text/html',
+                value: emailHtml,
+              },
+            ],
+          }),
+        }).then(async (res) => {
+          if (!res.ok) {
+            const errBody = await res.text();
+            console.error('SendGrid dispatch error:', res.status, errBody);
+          } else {
+            console.log('SendGrid dispatch successful (202 Accepted) for lead:', leadRef);
+          }
+        }).catch((err) => {
+          console.error('SendGrid network error:', err);
+        })
+      );
+    } else if (resendApiKey) {
+      // Fallback: Resend API if SendGrid key not configured
+      context.waitUntil(
+        fetch('https://api.resend.com/emails', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${resendApiKey.trim()}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            from: 'Pharande Puneville <onboarding@resend.dev>',
+            to: [targetEmail],
+            subject: emailSubject,
+            html: emailHtml,
+          }),
+        }).catch((err) => {
+          console.error('Resend dispatch error:', err);
+        })
+      );
+    } else {
+      console.warn('SENDGRID_API_KEY not configured in Cloudflare environment variables.');
+    }
 
     // 8. Optional Upstream CRM Webhook Dispatch
     if (env && env.LEAD_WEBHOOK_URL) {
