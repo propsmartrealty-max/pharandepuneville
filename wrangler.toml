@@ -15,6 +15,6 @@ MAHARERA_CLUSTER_D = "P52100000044"
 DEFAULT_SALES_PHONE = "+917744009295"
 SUPPORT_EMAIL = "propsmartrealty@gmail.com"
 LEAD_NOTIFICATION_EMAIL = "propsmartrealty@gmail.com"
-SENDGRID_FROM_EMAIL = "leads@pharande-puneville.in"
+SENDGRID_FROM_EMAIL = "propsmartrealty@gmail.com"
 # Note: Add SENDGRID_API_KEY as an encrypted secret in Cloudflare Dashboard (Pages > Settings > Variables)
 

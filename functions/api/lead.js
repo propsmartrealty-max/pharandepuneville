@@ -200,7 +200,7 @@ export async function onRequestPost(context) {
 
     // 7. Dispatch email to propsmartrealty@gmail.com via SendGrid v3 API
     const sendgridApiKey = env?.SENDGRID_API_KEY;
-    const sendgridFromEmail = env?.SENDGRID_FROM_EMAIL || 'leads@pharande-puneville.in';
+    const sendgridFromEmail = env?.SENDGRID_FROM_EMAIL || 'propsmartrealty@gmail.com';
     const resendApiKey = env?.RESEND_API_KEY;
 
     if (sendgridApiKey) {
