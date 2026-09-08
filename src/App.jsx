@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import ArchitecturalTicker from './components/ArchitecturalTicker';
@@ -21,6 +21,82 @@ export default function App() {
   const [modalMode, setModalMode] = useState('visit'); // 'visit' | 'brochure' | 'pricing' | 'cluster'
   const [modalConfig, setModalConfig] = useState(null);
   const [calculatorPrefill, setCalculatorPrefill] = useState(null);
+
+  useEffect(() => {
+    // 1. Immediately clean up any hash fragment in the browser address bar
+    if (window.location.hash) {
+      const targetId = window.location.hash.replace('#', '');
+      const el = document.getElementById(targetId);
+      if (el) {
+        setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 120);
+      }
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+
+    // 2. Map clean vanity URL paths to their corresponding section
+    const pathToSectionMap = {
+      '/floor-plans': 'residences',
+      '/residences': 'residences',
+      '/brochure': 'residences',
+      '/pricing': 'financials',
+      '/emi': 'financials',
+      '/financials': 'financials',
+      '/location': 'location',
+      '/gallery': 'gallery',
+      '/amenities': 'amenities',
+      '/masterplan': 'masterplan',
+      '/cluster-d': 'masterplan',
+      '/towers': 'towers',
+      '/vision': 'vision',
+      '/aedas': 'vision',
+      '/skywalk': 'vision',
+    };
+
+    const cleanPath = window.location.pathname.toLowerCase().replace(/\/$/, '');
+    const mappedSection = pathToSectionMap[cleanPath];
+    if (mappedSection) {
+      const el = document.getElementById(mappedSection);
+      if (el) {
+        setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 180);
+      }
+    }
+
+    // 3. Global click interceptor: intercept any anchor clicks with # and keep URL clean
+    const handleAnchorClick = (e) => {
+      const anchor = e.target.closest('a');
+      if (!anchor) return;
+      const href = anchor.getAttribute('href');
+      if (href && (href.startsWith('#') || href.startsWith('/#'))) {
+        e.preventDefault();
+        const targetId = href.replace(/^\/?#/, '');
+        if (targetId) {
+          const el = document.getElementById(targetId);
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth' });
+          }
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        if (window.location.hash) {
+          history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
+      }
+    };
+
+    // 4. Ensure window hashchange event also purges any hash
+    const handleHashChange = () => {
+      if (window.location.hash) {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
+      }
+    };
+
+    document.addEventListener('click', handleAnchorClick);
+    window.addEventListener('hashchange', handleHashChange);
+    return () => {
+      document.removeEventListener('click', handleAnchorClick);
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, []);
 
   const handleOpenBrochure = (config = null) => {
     setModalMode('brochure');

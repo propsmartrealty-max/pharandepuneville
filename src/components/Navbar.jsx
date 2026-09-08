@@ -21,15 +21,22 @@ export default function Navbar({ onOpenBrochure, onOpenVisit }) {
   }, []);
 
   const navLinks = [
-    { label: "AEDAS VISION", href: "#vision" },
-    { label: "MASTERPLAN", href: "#masterplan" },
-    { label: "TOWERS", href: "#towers" },
-    { label: "FLOOR PLANS", href: "#residences" },
-    { label: "AMENITIES", href: "#amenities" },
-    { label: "REAL GALLERY", href: "#gallery" },
-    { label: "LOCATION", href: "#location" },
-    { label: "EMI CALCULATOR", href: "#financials" },
+    { label: "AEDAS VISION", id: "vision" },
+    { label: "MASTERPLAN", id: "masterplan" },
+    { label: "TOWERS", id: "towers" },
+    { label: "FLOOR PLANS", id: "residences" },
+    { label: "AMENITIES", id: "amenities" },
+    { label: "REAL GALLERY", id: "gallery" },
+    { label: "LOCATION", id: "location" },
+    { label: "EMI CALCULATOR", id: "financials" },
   ];
+
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 font-google transition-all duration-300 ${
@@ -47,20 +54,21 @@ export default function Navbar({ onOpenBrochure, onOpenVisit }) {
         <div className="flex items-center justify-between h-20">
           
           {/* Brand Logo & Identity Recreated from Physical On-Site Monument */}
-          <a href="#" className="flex items-center flex-shrink-0 hover:opacity-90 transition-opacity" aria-label="Pharande Puneville Home">
+          <a href="/" className="flex items-center flex-shrink-0 hover:opacity-90 transition-opacity" aria-label="Pharande Puneville Home">
             <PunevilleLogo variant="dark" size="md" />
           </a>
 
           {/* Desktop Navigation Links (All Capital with Google Logo Geometric Font) */}
           <nav className="hidden xl:flex items-center gap-1 2xl:gap-2">
             {navLinks.map((link) => (
-              <a
+              <button
                 key={link.label}
-                href={link.href}
-                className="px-2.5 py-1.5 rounded-lg text-xs 2xl:text-[12.5px] font-google font-extrabold tracking-wider uppercase text-[#1E293B] hover:text-[#845D12] hover:bg-white/70 hover:backdrop-blur-sm transition-all duration-200 whitespace-nowrap hover:scale-105"
+                type="button"
+                onClick={() => scrollToSection(link.id)}
+                className="px-2.5 py-1.5 rounded-lg text-xs 2xl:text-[12.5px] font-google font-extrabold tracking-wider uppercase text-[#1E293B] hover:text-[#845D12] hover:bg-white/70 hover:backdrop-blur-sm transition-all duration-200 whitespace-nowrap hover:scale-105 cursor-pointer"
               >
                 {link.label}
-              </a>
+              </button>
             ))}
           </nav>
 
@@ -107,14 +115,17 @@ export default function Navbar({ onOpenBrochure, onOpenVisit }) {
         <div className="xl:hidden bg-[#FAF7F2]/90 backdrop-blur-2xl border-b border-white/80 px-4 pt-3 pb-6 space-y-3 shadow-2xl font-google animate-fadeIn">
           <div className="grid gap-1">
             {navLinks.map((link) => (
-              <a
+              <button
                 key={link.label}
-                href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="px-3 py-2.5 rounded-xl text-xs font-google font-extrabold uppercase tracking-wider text-[#1E293B] hover:bg-white/70 hover:text-[#845D12] transition-colors"
+                type="button"
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  scrollToSection(link.id);
+                }}
+                className="w-full text-left px-3 py-2.5 rounded-xl text-xs font-google font-extrabold uppercase tracking-wider text-[#1E293B] hover:bg-white/70 hover:text-[#845D12] transition-colors cursor-pointer"
               >
                 {link.label}
-              </a>
+              </button>
             ))}
           </div>
 

@@ -18,7 +18,7 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
     schemaType: "Apartment",
     breadcrumbs: [
       { name: "Home", url: "https://pharande-puneville.in/" },
-      { name: "Configurations", url: "https://pharande-puneville.in/#residences" },
+      { name: "Configurations", url: "https://pharande-puneville.in/floor-plans" },
       { name: "2 BHK Flats in Punawale", url: "https://pharande-puneville.in/2-bhk-flats-in-punawale" }
     ],
     faq: [
@@ -47,7 +47,7 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
     schemaType: "Apartment",
     breadcrumbs: [
       { name: "Home", url: "https://pharande-puneville.in/" },
-      { name: "Configurations", url: "https://pharande-puneville.in/#residences" },
+      { name: "Configurations", url: "https://pharande-puneville.in/floor-plans" },
       { name: "3 BHK Luxury Flats in Punawale", url: "https://pharande-puneville.in/3-bhk-flats-in-punawale" }
     ],
     faq: [
@@ -76,7 +76,7 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
     schemaType: "Apartment",
     breadcrumbs: [
       { name: "Home", url: "https://pharande-puneville.in/" },
-      { name: "Configurations", url: "https://pharande-puneville.in/#residences" },
+      { name: "Configurations", url: "https://pharande-puneville.in/floor-plans" },
       { name: "2.5 BHK Flats in Punawale", url: "https://pharande-puneville.in/2.5-bhk-flats-in-punawale" }
     ],
     faq: [
@@ -101,7 +101,7 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
     schemaType: "ApartmentComplex",
     breadcrumbs: [
       { name: "Home", url: "https://pharande-puneville.in/" },
-      { name: "Location", url: "https://pharande-puneville.in/#location" },
+      { name: "Location", url: "https://pharande-puneville.in/location" },
       { name: "Flats near Hinjawadi IT Park", url: "https://pharande-puneville.in/flats-near-hinjawadi-it-park" }
     ],
     faq: [
@@ -126,7 +126,7 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
     schemaType: "ApartmentComplex",
     breadcrumbs: [
       { name: "Home", url: "https://pharande-puneville.in/" },
-      { name: "Location", url: "https://pharande-puneville.in/#location" },
+      { name: "Location", url: "https://pharande-puneville.in/location" },
       { name: "Flats near Mumbai-Pune Expressway", url: "https://pharande-puneville.in/flats-near-mumbai-pune-expressway" }
     ],
     faq: [
@@ -151,7 +151,7 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
     schemaType: "ApartmentComplex",
     breadcrumbs: [
       { name: "Home", url: "https://pharande-puneville.in/" },
-      { name: "Location", url: "https://pharande-puneville.in/#location" },
+      { name: "Location", url: "https://pharande-puneville.in/location" },
       { name: "Flats near Wakad & PCMC", url: "https://pharande-puneville.in/flats-near-wakad-pcmc" }
     ],
     faq: [
@@ -176,7 +176,7 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
     schemaType: "ApartmentComplex",
     breadcrumbs: [
       { name: "Home", url: "https://pharande-puneville.in/" },
-      { name: "Masterplan", url: "https://pharande-puneville.in/#masterplan" },
+      { name: "Masterplan", url: "https://pharande-puneville.in/cluster-d" },
       { name: "Cluster D Wings Q, R, S", url: "https://pharande-puneville.in/pharande-puneville-cluster-d" }
     ],
     faq: [
@@ -201,7 +201,7 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
     schemaType: "RealEstateAgent",
     breadcrumbs: [
       { name: "Home", url: "https://pharande-puneville.in/" },
-      { name: "Developer Legacy", url: "https://pharande-puneville.in/#developer" },
+      { name: "Developer Legacy", url: "https://pharande-puneville.in/pharande-spaces-punawale" },
       { name: "Pharande Spaces Punawale", url: "https://pharande-puneville.in/pharande-spaces-punawale" }
     ],
     faq: [
@@ -226,7 +226,7 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
     schemaType: "RealEstateListing",
     breadcrumbs: [
       { name: "Home", url: "https://pharande-puneville.in/" },
-      { name: "Investor Desk", url: "https://pharande-puneville.in/#financials" },
+      { name: "Investor Desk", url: "https://pharande-puneville.in/nri-investment-punawale-pune" },
       { name: "NRI Property Investment Pune", url: "https://pharande-puneville.in/nri-investment-punawale-pune" }
     ],
     faq: [

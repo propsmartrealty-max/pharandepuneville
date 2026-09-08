@@ -424,12 +424,13 @@ export default function InteractiveMasterplan({ onOpenVisit, onSelectFloorPlan }
                 <ArrowRight className="w-4 h-4" />
               </button>
 
-              <a
-                href="#residences"
-                className="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-[#0F172A] hover:bg-white glass-pill text-center block transition-colors"
+              <button
+                type="button"
+                onClick={() => document.getElementById('residences')?.scrollIntoView({ behavior: 'smooth' })}
+                className="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-[#0F172A] hover:bg-white glass-pill text-center block transition-colors cursor-pointer"
               >
                 View Residences Facing This Zone
-              </a>
+              </button>
             </div>
 
           </div>

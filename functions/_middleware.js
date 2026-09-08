@@ -133,7 +133,7 @@ class EdgeHeadHandler {
       const dynamicSchema = {
         "@context": "https://schema.org",
         "@type": "RealEstateAgent",
-        "@id": "https://pharande-puneville.in/#edge-agent",
+        "@id": "https://pharande-puneville.in/edge-agent",
         "name": "Pharande Puneville Sales Experience",
         "url": "https://pharande-puneville.in",
         "telephone": "+91-7744009295",
@@ -216,7 +216,7 @@ class EdgeBodyHandler {
             ${this.pSeo.badge}
           </span>
           <span class="text-slate-200 font-medium">${this.pSeo.announcement}</span>
-          <a href="#residences" class="inline-flex items-center text-amber-300 hover:text-white font-bold ml-1 transition-colors underline underline-offset-2">
+          <a href="/floor-plans" class="inline-flex items-center text-amber-300 hover:text-white font-bold ml-1 transition-colors underline underline-offset-2">
             Explore Configurations & Pricing &rarr;
           </a>
         </div>

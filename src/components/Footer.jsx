@@ -31,13 +31,13 @@ export default function Footer({ onOpenBrochure, onOpenVisit }) {
               Township Links
             </h4>
             <ul className="space-y-2.5">
-              <li><a href="#vision" className="hover:text-amber-400 transition-colors">Aedas Architectural Vision</a></li>
-              <li><a href="#masterplan" className="hover:text-amber-400 transition-colors">28-Acre Masterplan</a></li>
-              <li><a href="#towers" className="hover:text-amber-400 transition-colors">19 High-Rise Towers</a></li>
-              <li><a href="#residences" className="hover:text-amber-400 transition-colors">2, 2.5 & 3 BHK Plans</a></li>
-              <li><a href="#amenities" className="hover:text-amber-400 transition-colors">40+ Lifestyle Amenities</a></li>
-              <li><a href="#gallery" className="hover:text-amber-400 transition-colors">Authentic Gallery</a></li>
-              <li><a href="#financials" className="hover:text-amber-400 transition-colors">Mortgage EMI Calculator</a></li>
+              <li><button type="button" onClick={() => document.getElementById('vision')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-amber-400 transition-colors cursor-pointer text-left">Aedas Architectural Vision</button></li>
+              <li><button type="button" onClick={() => document.getElementById('masterplan')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-amber-400 transition-colors cursor-pointer text-left">28-Acre Masterplan</button></li>
+              <li><button type="button" onClick={() => document.getElementById('towers')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-amber-400 transition-colors cursor-pointer text-left">19 High-Rise Towers</button></li>
+              <li><button type="button" onClick={() => document.getElementById('residences')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-amber-400 transition-colors cursor-pointer text-left">2, 2.5 & 3 BHK Plans</button></li>
+              <li><button type="button" onClick={() => document.getElementById('amenities')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-amber-400 transition-colors cursor-pointer text-left">40+ Lifestyle Amenities</button></li>
+              <li><button type="button" onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-amber-400 transition-colors cursor-pointer text-left">Authentic Gallery</button></li>
+              <li><button type="button" onClick={() => document.getElementById('financials')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-amber-400 transition-colors cursor-pointer text-left">Mortgage EMI Calculator</button></li>
             </ul>
           </div>
 
@@ -151,11 +151,11 @@ export default function Footer({ onOpenBrochure, onOpenVisit }) {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 w-full pt-4 border-t border-slate-800/80">
             <EdgeGeoStatus />
             <div className="flex items-center gap-4 font-medium">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+              <span className="text-slate-400">Privacy Policy</span>
               <span>•</span>
-              <a href="#" className="hover:text-white transition-colors">Terms of Use</a>
+              <span className="text-slate-400">Terms of Use</span>
               <span>•</span>
-              <a href="#" className="hover:text-white transition-colors">MahaRERA Portal</a>
+              <a href="https://maharera.mahaonline.gov.in" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">MahaRERA Portal</a>
             </div>
           </div>
         </div>

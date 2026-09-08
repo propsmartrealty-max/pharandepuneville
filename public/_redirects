@@ -1,17 +1,17 @@
 # Cloudflare Pages Edge Redirects & Canonical Routing
 
-# 1. Luxury Vanity Shortcuts for High-Intent Ad Campaigns
-/brochure        /#residences       302
-/floor-plans     /#residences       302
-/cluster-d       /#masterplan       302
-/site-tour       /#vip-tour         302
-/pricing         /#financials       302
-/emi             /#financials       302
-/location        /#location         302
-/gallery         /#gallery          302
-/skywalk         /#vision           302
-/aedas           /#vision           302
-/amenities       /#amenities        302
+# 1. Clean Vanity URLs & Landing Routes (200 OK without hash fragment)
+/brochure        /index.html        200
+/floor-plans     /index.html        200
+/cluster-d       /index.html        200
+/site-tour       /index.html        200
+/pricing         /index.html        200
+/emi             /index.html        200
+/location        /index.html        200
+/gallery         /index.html        200
+/skywalk         /index.html        200
+/aedas           /index.html        200
+/amenities       /index.html        200
 
 # 2. Programmatic SEO (pSEO) Edge Rewrite Routes (200 OK without redirect lag)
 /2-bhk-flats-in-punawale             /index.html        200

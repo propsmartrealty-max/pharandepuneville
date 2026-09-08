@@ -155,13 +155,14 @@ export default function HeroSection({ onOpenBrochure, onOpenVisit }) {
                 <Sparkles className="w-4 h-4 text-gold-500 group-hover:rotate-12 transition-transform" />
               </button>
 
-              <a
-                href="#gallery"
-                className="inline-flex items-center justify-center gap-2 text-xs font-bold text-[#475569] hover:text-[#0F172A] py-3 px-3 transition-all hover:scale-105"
+              <button
+                type="button"
+                onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}
+                className="inline-flex items-center justify-center gap-2 text-xs font-bold text-[#475569] hover:text-[#0F172A] py-3 px-3 transition-all hover:scale-105 cursor-pointer"
               >
                 <Compass className="w-4 h-4 text-gold-500 animate-spin" style={{ animationDuration: '8s' }} />
                 <span>Real Photos</span>
-              </a>
+              </button>
             </div>
 
             {/* Highlight Alert Box */}
@@ -281,13 +282,14 @@ export default function HeroSection({ onOpenBrochure, onOpenVisit }) {
 
       {/* Downward Scroll Cue */}
       <div className="relative z-10 flex justify-center mt-6">
-        <a
-          href="#vision"
-          className="p-2 rounded-full text-slate-500 hover:text-gold-400 transition-colors animate-bounce"
+        <button
+          type="button"
+          onClick={() => document.getElementById('vision')?.scrollIntoView({ behavior: 'smooth' })}
+          className="p-2 rounded-full text-slate-500 hover:text-gold-400 transition-colors animate-bounce cursor-pointer"
           aria-label="Scroll Down"
         >
           <ChevronDown className="w-5 h-5" />
-        </a>
+        </button>
       </div>
     </section>
   );
