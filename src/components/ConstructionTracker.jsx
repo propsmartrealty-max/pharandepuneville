@@ -8,7 +8,7 @@ export default function ConstructionTracker({ onOpenVisit }) {
   const currentSpecs = SPECIFICATIONS.find(s => s.category === activeSpecCategory) || SPECIFICATIONS[0];
 
   return (
-    <section className="py-24 bg-[#F4EFE6] relative overflow-hidden border-t border-[#E2D9CC]">
+    <section id="construction" className="py-24 bg-[#F4EFE6] relative overflow-hidden border-t border-[#E2D9CC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}

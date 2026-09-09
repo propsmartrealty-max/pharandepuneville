@@ -6,6 +6,8 @@ interface Props {
   description?: string;
   image?: string;
   canonicalUrl?: string;
+  keywords?: string;
+  faq?: Array<{ q: string; a: string }>;
 }
 
 const {
@@ -13,9 +15,65 @@ const {
   description = "Pharande Puneville: 28-Acre Integrated Township in Punawale, Pune designed by world-renowned architects Aedas. Featuring 2, 2.5 & 3 BHK luxury residences, 22-ft elevated skywalk, 4 Olympic-sized pools, and 60% open greens.",
   image = "/images/puneville/hero/banner1.jpg",
   canonicalUrl = "https://pharande-puneville.in/",
+  keywords = "Pharande Puneville, Puneville Punawale, 2 BHK flats in Punawale, 3 BHK flats in Punawale, flats near Hinjawadi IT Park, Puneville MahaRERA P52100047694, Pharande Spaces",
+  faq,
 } = Astro.props;
 
 // Rich Structured Schema.org for Google Real Estate, LocalBusiness & Punawale Knowledge Graph
+const defaultFaqs = [
+  {
+    "@type": "Question",
+    "name": "What configurations are available at Pharande Puneville?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Pharande Puneville offers 2 BHK Royale (752 sq.ft.), 2 BHK Grande (848 sq.ft.), 2.5 BHK with dedicated Work-From-Home Pod (948 sq.ft.), 3 BHK Imperial Signature Residences (1,172 sq.ft.), and 4 BHK Sky Residences."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "Where is Pharande Puneville located in Punawale?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Pharande Puneville is situated on the Punawale-Ravet BRTS corridor, just 1.2 km (2 minutes) from the Mumbai-Pune Expressway exit and 4.8 km (8-10 minutes) from Hinjawadi IT Park Phase 1, PCMC Pune."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "Who designed the masterplan of Puneville?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The entire 28-acre masterplan is conceptualized by globally acclaimed master architects AEDAS, featuring an iconic 22-foot elevated skywalk promenade connecting all 19 residential towers."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "What are the MahaRERA registration numbers for Puneville?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Pharande Puneville holds registered MahaRERA certifications across phases: Phase I (P52100000441), Phase II (P52100000440), Phase III Cluster A (P52100029522), Phase III Cluster B (P52100051020), Phase III Cluster C (P52100077431), and Phase III Cluster D Wings Q, R, S (P52100047694)."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "What is the Punawale ecosystem advantage for homebuyers and investors?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Punawale offers 12.4% YoY capital appreciation, superior air quality with 60% open greens, planned Metro Line 3 connectivity, and high rental yields driven by 400,000+ tech professionals in Hinjawadi."
+    }
+  }
+];
+
+const activeFaqEntities = faq && faq.length > 0
+  ? faq.map(f => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": f.a
+      }
+    }))
+  : defaultFaqs;
+
 const schemaOrg = {
   "@context": "https://schema.org",
   "@graph": [
@@ -109,48 +167,7 @@ const schemaOrg = {
     },
     {
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What configurations are available at Pharande Puneville?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Pharande Puneville offers 2 BHK Royale (752 sq.ft.), 2 BHK Grande (848 sq.ft.), 2.5 BHK with dedicated Work-From-Home Pod (948 sq.ft.), and 3 BHK Imperial Signature Residences (1,172 sq.ft.)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Where is Pharande Puneville located in Punawale?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Pharande Puneville is situated on the Punawale-Ravet BRTS corridor, just 1.2 km (2 minutes) from the Mumbai-Pune Expressway exit and 4.8 km (8-10 minutes) from Hinjawadi IT Park Phase 1, PCMC Pune."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Who designed the masterplan of Puneville?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The entire 28-acre masterplan is conceptualized by globally acclaimed master architects AEDAS, featuring an iconic 22-foot elevated skywalk promenade connecting all clusters."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the MahaRERA registration number for Puneville Phase III?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Pharande Puneville Phase III Cluster D (Wings Q, R, S) is registered under MahaRERA number P52100000044."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the Punawale ecosystem advantage for homebuyers and investors?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Punawale offers 12.4% YoY capital appreciation, superior air quality with 60% open greens, planned Metro Line 3 connectivity, and high rental yields driven by 400,000+ tech professionals in Hinjawadi."
-          }
-        }
-      ]
+      "mainEntity": activeFaqEntities
     }
   ]
 };
@@ -167,7 +184,7 @@ const schemaOrg = {
     <!-- Google Search & Crawl SEO -->
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="keywords" content="Pharande Puneville, Puneville Punawale, flats in Punawale, Aedas Puneville, luxury 2 BHK Punawale, 3 BHK Hinjawadi expressway, Pharande Spaces Pune, PCMC luxury townships, Punawale real estate" />
+    <meta name="keywords" content={keywords} />
     <meta name="author" content="Pharande Spaces" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <link rel="canonical" href={canonicalUrl} />

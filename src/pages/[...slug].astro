@@ -1,0 +1,96 @@
+---
+import Layout from '../layouts/Layout.astro';
+import App from '../App.jsx';
+import { CLEAN_ROUTES, ALIAS_ROUTES } from '../data/routesData';
+import { SEO_TOPICAL_PAGES } from '../data/seoEcosystem';
+import { PROGRAMMATIC_SEO_REGISTRY } from '../../functions/_seo_data.js';
+
+export async function getStaticPaths() {
+  const pathMap = new Map();
+
+  // 1. Ultra-Advanced SEO Topical Pages (Priority)
+  for (const [key, topic] of Object.entries(SEO_TOPICAL_PAGES)) {
+    const slug = topic.slug.replace(/^\//, '');
+    const keywordsList = [topic.targetKeyword, ...(topic.secondaryKeywords || [])].join(', ');
+    pathMap.set(slug, {
+      params: { slug },
+      props: {
+        title: topic.title,
+        description: topic.description,
+        canonicalUrl: topic.canonicalUrl,
+        sectionId: topic.sectionId,
+        keywords: keywordsList,
+        faq: topic.faq,
+      }
+    });
+  }
+
+  // 2. Primary Clean Section Routes
+  for (const route of CLEAN_ROUTES) {
+    const slug = route.path.replace(/^\//, '');
+    if (!pathMap.has(slug)) {
+      pathMap.set(slug, {
+        params: { slug },
+        props: {
+          title: route.title,
+          description: route.description,
+          canonicalUrl: route.canonicalUrl,
+          sectionId: route.id,
+          keywords: "Pharande Puneville, Puneville Punawale, flats in Punawale, luxury residences, Aedas Puneville",
+          faq: undefined,
+        }
+      });
+    }
+  }
+
+  // 3. Programmatic SEO Routes
+  for (const [key, pSeo] of Object.entries(PROGRAMMATIC_SEO_REGISTRY)) {
+    const slug = pSeo.slug.replace(/^\//, '');
+    if (!pathMap.has(slug)) {
+      pathMap.set(slug, {
+        params: { slug },
+        props: {
+          title: pSeo.title,
+          description: pSeo.description,
+          canonicalUrl: `https://pharande-puneville.in/${pSeo.slug}`,
+          sectionId: 'residences',
+          keywords: pSeo.keywords || "Pharande Puneville, 2 BHK, 3 BHK, Punawale",
+          faq: pSeo.faq,
+        }
+      });
+    }
+  }
+
+  // 4. Vanity Aliases
+  for (const alias of ALIAS_ROUTES) {
+    const slug = alias.path.replace(/^\//, '');
+    if (!pathMap.has(slug)) {
+      pathMap.set(slug, {
+        params: { slug },
+        props: {
+          title: "Pharande Puneville | Punawale, Pune — 28-Acre Aedas Township",
+          description: "28-Acre Integrated Township in Punawale, Pune designed by Aedas.",
+          canonicalUrl: `https://pharande-puneville.in${alias.target}`,
+          sectionId: alias.id,
+          keywords: "Pharande Puneville, Puneville Punawale",
+          faq: undefined,
+        }
+      });
+    }
+  }
+
+  return Array.from(pathMap.values());
+}
+
+const { title, description, canonicalUrl, sectionId, keywords, faq } = Astro.props;
+---
+
+<Layout
+  title={title}
+  description={description}
+  canonicalUrl={canonicalUrl}
+  keywords={keywords}
+  faq={faq}
+>
+  <App client:load initialSection={sectionId} />
+</Layout>

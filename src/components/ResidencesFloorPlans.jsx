@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Layout, Check, Sparkles, Compass, ArrowRight, BedDouble, Bath, Maximize2, FileText, ChevronRight } from 'lucide-react';
 import { FLOOR_PLANS } from '../data/floorPlansData';
 
-export default function ResidencesFloorPlans({ onOpenVisit, onSelectForEMI }) {
+export default function ResidencesFloorPlans({ onOpenVisit, onOpenBrochure, onSelectForEMI }) {
   const [selectedPlanId, setSelectedPlanId] = useState('2bhk-royale');
   const [viewMode, setViewMode] = useState('2d'); // '2d' or 'dimensions'
 
@@ -239,18 +239,26 @@ export default function ResidencesFloorPlans({ onOpenVisit, onSelectForEMI }) {
             </div>
 
             {/* Action Triggers */}
-            <div className="space-y-3 pt-4 border-t border-white/60">
+            <div className="space-y-2.5 pt-4 border-t border-white/60">
               <button
                 onClick={onOpenVisit}
-                className="w-full py-3.5 px-4 rounded-xl text-xs font-bold text-white bg-[#0F172A] hover:bg-[#1E293B] shadow-lg shadow-slate-900/20 transition-all flex items-center justify-center gap-2"
+                className="w-full py-3.5 px-4 rounded-xl text-xs font-bold text-white bg-[#0F172A] hover:bg-[#1E293B] shadow-lg shadow-slate-900/20 transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>Schedule Walkthrough of {activePlan.type}</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
 
               <button
+                onClick={() => onOpenBrochure ? onOpenBrochure(activePlan.type) : onOpenVisit()}
+                className="w-full py-3 px-4 rounded-xl text-xs font-bold text-[#845D12] bg-amber-400/15 hover:bg-amber-400/25 border border-amber-400/40 transition-all flex items-center justify-center gap-2 cursor-pointer"
+              >
+                <FileText className="w-4 h-4 text-[#845D12]" />
+                <span>Instant Cost Sheet & PDF for {activePlan.type}</span>
+              </button>
+
+              <button
                 onClick={() => onSelectForEMI(activePlan.basePriceValue)}
-                className="w-full py-3 px-4 rounded-xl text-xs font-bold text-[#0F172A] glass-pill hover:bg-white transition-all flex items-center justify-center gap-2"
+                className="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-[#0F172A] glass-pill hover:bg-white transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>Calculate Monthly EMI for this Unit</span>
               </button>

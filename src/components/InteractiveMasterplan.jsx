@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Compass, Info, CheckCircle, Waves, Building2, Trees, ShieldAlert, Navigation2, ArrowRight } from 'lucide-react';
 
-export default function InteractiveMasterplan({ onOpenVisit, onSelectFloorPlan }) {
+export default function InteractiveMasterplan({ onOpenVisit, onSelectFloorPlan, onNavigate }) {
   const [selectedZone, setSelectedZone] = useState('skywalk');
   const [planDisplayMode, setPlanDisplayMode] = useState('interactive'); // 'interactive' or 'official'
 
@@ -424,13 +424,17 @@ export default function InteractiveMasterplan({ onOpenVisit, onSelectFloorPlan }
                 <ArrowRight className="w-4 h-4" />
               </button>
 
-              <button
-                type="button"
-                onClick={() => document.getElementById('residences')?.scrollIntoView({ behavior: 'smooth' })}
+              <a
+                href="/floor-plans"
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (onNavigate) onNavigate('residences', '/floor-plans');
+                  else document.getElementById('residences')?.scrollIntoView({ behavior: 'smooth' });
+                }}
                 className="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-[#0F172A] hover:bg-white glass-pill text-center block transition-colors cursor-pointer"
               >
                 View Residences Facing This Zone
-              </button>
+              </a>
             </div>
 
           </div>

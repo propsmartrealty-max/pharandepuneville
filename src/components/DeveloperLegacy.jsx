@@ -26,7 +26,7 @@ export default function DeveloperLegacy({ onOpenVisit }) {
   ];
 
   return (
-    <section className="py-24 bg-[#FAF7F2] relative overflow-hidden border-t border-[#E2D9CC]">
+    <section id="developer" className="py-24 bg-[#FAF7F2] relative overflow-hidden border-t border-[#E2D9CC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}

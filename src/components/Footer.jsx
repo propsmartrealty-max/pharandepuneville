@@ -4,24 +4,41 @@ import { PROJECT_INFO, CLUSTERS_DATA } from '../data/projectData';
 import PunevilleLogo from './PunevilleLogo';
 import EdgeGeoStatus from './EdgeGeoStatus';
 
-export default function Footer({ onOpenBrochure, onOpenVisit }) {
+export default function Footer({ onOpenBrochure, onOpenVisit, onNavigate }) {
+  const handleNav = (e, id, path) => {
+    e.preventDefault();
+    if (onNavigate) {
+      onNavigate(id, path);
+    } else {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+        history.pushState(null, '', path);
+      }
+    }
+  };
+
   return (
-    <footer className="bg-[#0F172A] border-t border-[#D8CEBF] pt-16 pb-12 text-slate-300 text-xs font-google">
+    <footer className="bg-[#0B1120] text-slate-300 pt-20 pb-12 border-t border-slate-800 relative z-10 font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Top Branding & Fast Contacts */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+        {/* Main Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 pb-16 border-b border-slate-800">
           
-          <div className="lg:col-span-2 space-y-4">
+          {/* Brand Col */}
+          <div className="lg:col-span-2 space-y-6">
             <PunevilleLogo variant="light" size="md" />
-
-            <p className="text-slate-300 text-xs font-normal leading-relaxed max-w-sm">
-              An iconic 28-acre landmark residential township in Punawale, Pune. Featuring a signature 22-ft high elevated skywalk, 4 Olympic swimming pools, and 19 aerodynamic towers set in 60% open greens.
+            
+            <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
+              An iconic 28-acre masterplanned township in Punawale, PCMC Pune designed by world-renowned architecture practice Aedas. Elevated skywalk promenade, 4 Olympic-sized swimming pools, and 19 soaring towers.
             </p>
 
-            <div className="flex items-center gap-2 pt-2 text-slate-200">
-              <ShieldCheck className="w-4 h-4 text-emerald-400" />
-              <span>Developed by <strong className="text-white">Pharande Spaces</strong> (30+ Years Heritage)</span>
+            <div className="flex items-center gap-3 pt-2">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs font-semibold">
+                <ShieldCheck className="w-3.5 h-3.5" />
+                MahaRERA: P52100000044
+              </span>
+              <span className="text-xs text-slate-400">Wings Q, R, S</span>
             </div>
           </div>
 
@@ -30,14 +47,16 @@ export default function Footer({ onOpenBrochure, onOpenVisit }) {
             <h4 className="font-display font-bold text-sm text-white uppercase tracking-wider mb-4">
               Township Links
             </h4>
-            <ul className="space-y-2.5">
-              <li><button type="button" onClick={() => document.getElementById('vision')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-amber-400 transition-colors cursor-pointer text-left">Aedas Architectural Vision</button></li>
-              <li><button type="button" onClick={() => document.getElementById('masterplan')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-amber-400 transition-colors cursor-pointer text-left">28-Acre Masterplan</button></li>
-              <li><button type="button" onClick={() => document.getElementById('towers')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-amber-400 transition-colors cursor-pointer text-left">19 High-Rise Towers</button></li>
-              <li><button type="button" onClick={() => document.getElementById('residences')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-amber-400 transition-colors cursor-pointer text-left">2, 2.5 & 3 BHK Plans</button></li>
-              <li><button type="button" onClick={() => document.getElementById('amenities')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-amber-400 transition-colors cursor-pointer text-left">40+ Lifestyle Amenities</button></li>
-              <li><button type="button" onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-amber-400 transition-colors cursor-pointer text-left">Authentic Gallery</button></li>
-              <li><button type="button" onClick={() => document.getElementById('financials')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-amber-400 transition-colors cursor-pointer text-left">Mortgage EMI Calculator</button></li>
+            <ul className="space-y-2.5 text-sm">
+              <li><a href="/aedas-vision" onClick={(e) => handleNav(e, 'vision', '/aedas-vision')} className="hover:text-amber-400 transition-colors">Aedas Architectural Vision</a></li>
+              <li><a href="/masterplan" onClick={(e) => handleNav(e, 'masterplan', '/masterplan')} className="hover:text-amber-400 transition-colors">28-Acre Masterplan</a></li>
+              <li><a href="/towers" onClick={(e) => handleNav(e, 'towers', '/towers')} className="hover:text-amber-400 transition-colors">19 High-Rise Towers</a></li>
+              <li><a href="/floor-plans" onClick={(e) => handleNav(e, 'residences', '/floor-plans')} className="hover:text-amber-400 transition-colors">2, 2.5 & 3 BHK Plans</a></li>
+              <li><a href="/amenities" onClick={(e) => handleNav(e, 'amenities', '/amenities')} className="hover:text-amber-400 transition-colors">40+ Lifestyle Amenities</a></li>
+              <li><a href="/gallery" onClick={(e) => handleNav(e, 'gallery', '/gallery')} className="hover:text-amber-400 transition-colors">Authentic Gallery</a></li>
+              <li><a href="/emi-calculator" onClick={(e) => handleNav(e, 'financials', '/emi-calculator')} className="hover:text-amber-400 transition-colors">Mortgage EMI Calculator</a></li>
+              <li><a href="/construction" onClick={(e) => handleNav(e, 'construction', '/construction')} className="hover:text-amber-400 transition-colors">Cluster D Status</a></li>
+              <li><a href="/developer" onClick={(e) => handleNav(e, 'developer', '/developer')} className="hover:text-amber-400 transition-colors">Pharande Spaces Legacy</a></li>
             </ul>
           </div>
 
