@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShieldCheck, Layers, Compass, Navigation2, HelpCircle, TrendingUp, ExternalLink, ChevronDown, CheckCircle2, ArrowRight } from 'lucide-react';
+import { ShieldCheck, Layers, Compass, Navigation2, HelpCircle, TrendingUp, ExternalLink, ChevronDown, CheckCircle2, ArrowRight, Scale } from 'lucide-react';
 import { RERA_REGISTRATIONS, SEO_TOPICAL_PAGES } from '../data/seoEcosystem';
 
 export default function SEOTopicalHub({ onOpenVisit, onOpenBrochure, onNavigate }) {
@@ -12,6 +12,7 @@ export default function SEOTopicalHub({ onOpenVisit, onOpenBrochure, onNavigate 
     { id: 'skywalk', label: '22-Ft Skywalk & Pools', icon: Compass, badge: 'Engineering' },
     { id: 'transit', label: 'Hinjawadi Commute Radar', icon: Navigation2, badge: '8-10 Mins' },
     { id: 'investment', label: 'ROI & Rental Yield', icon: TrendingUp, badge: '12.4% YoY' },
+    { id: 'comparisons', label: 'Township Comparisons', icon: Scale, badge: 'Vs Competitors' },
     { id: 'faq', label: 'Knowledge FAQ', icon: HelpCircle, badge: 'Verified' },
   ];
 
@@ -317,7 +318,131 @@ export default function SEOTopicalHub({ onOpenVisit, onOpenBrochure, onNavigate 
           </div>
         )}
 
-        {/* Tab 6: Knowledge FAQ */}
+        {/* Tab 6: Township Comparisons */}
+        {activeTab === 'comparisons' && (
+          <div className="glass-panel rounded-3xl p-6 sm:p-10 shadow-xl border border-white/80 animate-fadeIn">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-[#E2D9CC]/70 mb-8">
+              <div>
+                <h3 className="text-xl sm:text-2xl font-display font-bold text-[#0F172A]">
+                  Comparative Benchmark Matrix
+                </h3>
+                <p className="text-xs sm:text-sm text-[#475569] mt-1">
+                  Why smart homebuyers and investors choose Pharande Puneville over cramped standalone towers and peripheral developments.
+                </p>
+              </div>
+              <span className="px-3.5 py-1 rounded-full bg-amber-400/15 text-[#845D12] text-xs font-bold font-mono">
+                Objective Evaluation
+              </span>
+            </div>
+
+            {/* Desktop Comparison Table */}
+            <div className="overflow-x-auto rounded-2xl border border-slate-200/80 bg-white/90 shadow-sm mb-8">
+              <table className="w-full text-left text-xs sm:text-sm">
+                <thead>
+                  <tr className="bg-[#0F172A] text-white">
+                    <th className="py-3.5 px-4 font-bold">Key Architectural Feature</th>
+                    <th className="py-3.5 px-4 font-bold bg-[#845D12] text-white">Pharande Puneville (Punawale)</th>
+                    <th className="py-3.5 px-4 font-bold text-slate-300">Typical Standalone Towers</th>
+                    <th className="py-3.5 px-4 font-bold text-slate-300">Peripheral Mega Townships</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100 text-[#334155]">
+                  <tr className="hover:bg-amber-50/40 transition-colors">
+                    <td className="py-3 px-4 font-semibold text-[#0F172A]">Land Parcel &amp; Density</td>
+                    <td className="py-3 px-4 font-bold text-emerald-700 bg-amber-50/50">28 Acres masterplan, 60% open landscaped greens, 19 towers</td>
+                    <td className="py-3 px-4 text-[#64748B]">1 to 3 Acres cramped plots, limited setbacks</td>
+                    <td className="py-3 px-4 text-[#64748B]">100+ Acres distant plots, high construction dust</td>
+                  </tr>
+                  <tr className="hover:bg-amber-50/40 transition-colors">
+                    <td className="py-3 px-4 font-semibold text-[#0F172A]">Master Architecture</td>
+                    <td className="py-3 px-4 font-bold text-emerald-700 bg-amber-50/50">AEDAS (World's #1 Global Architecture Firm)</td>
+                    <td className="py-3 px-4 text-[#64748B]">Generic local draftsmen</td>
+                    <td className="py-3 px-4 text-[#64748B]">Standard in-house blueprints</td>
+                  </tr>
+                  <tr className="hover:bg-amber-50/40 transition-colors">
+                    <td className="py-3 px-4 font-semibold text-[#0F172A]">22-Foot Skywalk Promenade</td>
+                    <td className="py-3 px-4 font-bold text-emerald-700 bg-amber-50/50">2.1-km elevated vehicle-free pedestrian highway</td>
+                    <td className="py-3 px-4 text-rose-600 font-medium">None (Vehicles cross pedestrian paths)</td>
+                    <td className="py-3 px-4 text-[#64748B]">Internal perimeter walking tracks</td>
+                  </tr>
+                  <tr className="hover:bg-amber-50/40 transition-colors">
+                    <td className="py-3 px-4 font-semibold text-[#0F172A]">Olympic Swimming Pools</td>
+                    <td className="py-3 px-4 font-bold text-emerald-700 bg-amber-50/50">4 Olympic-Sized international swimming pools</td>
+                    <td className="py-3 px-4 text-[#64748B]">1 small rooftop/podium splash pool</td>
+                    <td className="py-3 px-4 text-[#64748B]">1 or 2 centralized pools for 5,000+ flats</td>
+                  </tr>
+                  <tr className="hover:bg-amber-50/40 transition-colors">
+                    <td className="py-3 px-4 font-semibold text-[#0F172A]">Expressway &amp; Transit Access</td>
+                    <td className="py-3 px-4 font-bold text-emerald-700 bg-amber-50/50">2 Mins (1.2 km) direct to Mumbai-Pune Expressway</td>
+                    <td className="py-3 px-4 text-[#64748B]">15-25 mins through local choke points</td>
+                    <td className="py-3 px-4 text-[#64748B]">25-40 mins through Marunji village bottlenecks</td>
+                  </tr>
+                  <tr className="hover:bg-amber-50/40 transition-colors">
+                    <td className="py-3 px-4 font-semibold text-[#0F172A]">Construction Framework</td>
+                    <td className="py-3 px-4 font-bold text-emerald-700 bg-amber-50/50">Monolithic RCC Aluminium Formwork (Seismic Safe)</td>
+                    <td className="py-3 px-4 text-[#64748B]">Conventional RCC with red brick masonry</td>
+                    <td className="py-3 px-4 text-[#64748B]">Hybrid precast / conventional</td>
+                  </tr>
+                  <tr className="hover:bg-amber-50/40 transition-colors">
+                    <td className="py-3 px-4 font-semibold text-[#0F172A]">Usable Floorplate Efficiency</td>
+                    <td className="py-3 px-4 font-bold text-emerald-700 bg-amber-50/50">3-side open, zero passage wastage, double sundecks</td>
+                    <td className="py-3 px-4 text-[#64748B]">Long dark hallways, shared wall noise</td>
+                    <td className="py-3 px-4 text-[#64748B]">Compact layouts with narrow balconies</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            {/* Comparison Quick Links */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <a
+                href="/puneville-vs-godrej-woodsville"
+                className="p-4 rounded-2xl bg-white/80 border border-white hover:border-[#845D12]/40 transition-all shadow-sm group block"
+              >
+                <div className="text-[11px] font-mono font-bold text-[#845D12] uppercase mb-1">Head-to-Head</div>
+                <div className="text-xs sm:text-sm font-bold text-[#0F172A] group-hover:text-[#845D12] transition-colors mb-1">
+                  Puneville vs Godrej Woodsville
+                </div>
+                <p className="text-[11px] text-[#64748B] line-clamp-2">Detailed comparison of amenities, transit times, and density.</p>
+              </a>
+
+              <a
+                href="/puneville-vs-kolte-patil-life-republic"
+                className="p-4 rounded-2xl bg-white/80 border border-white hover:border-[#845D12]/40 transition-all shadow-sm group block"
+              >
+                <div className="text-[11px] font-mono font-bold text-[#845D12] uppercase mb-1">Location Analysis</div>
+                <div className="text-xs sm:text-sm font-bold text-[#0F172A] group-hover:text-[#845D12] transition-colors mb-1">
+                  Puneville vs Life Republic
+                </div>
+                <p className="text-[11px] text-[#64748B] line-clamp-2">Punawale BRTS highway corridor vs Marunji road infrastructure.</p>
+              </a>
+
+              <a
+                href="/puneville-vs-pharande-kairosa"
+                className="p-4 rounded-2xl bg-white/80 border border-white hover:border-[#845D12]/40 transition-all shadow-sm group block"
+              >
+                <div className="text-[11px] font-mono font-bold text-[#845D12] uppercase mb-1">Developer Portfolio</div>
+                <div className="text-xs sm:text-sm font-bold text-[#0F172A] group-hover:text-[#845D12] transition-colors mb-1">
+                  Puneville vs Pharande Kairosa
+                </div>
+                <p className="text-[11px] text-[#64748B] line-clamp-2">Township living vs boutique smart home community in Punawale.</p>
+              </a>
+
+              <a
+                href="/nri-property-investment-punawale-pune"
+                className="p-4 rounded-2xl bg-white/80 border border-white hover:border-[#845D12]/40 transition-all shadow-sm group block"
+              >
+                <div className="text-[11px] font-mono font-bold text-[#845D12] uppercase mb-1">Global Desk</div>
+                <div className="text-xs sm:text-sm font-bold text-[#0F172A] group-hover:text-[#845D12] transition-colors mb-1">
+                  NRI Investment &amp; FEMA Desk
+                </div>
+                <p className="text-[11px] text-[#64748B] line-clamp-2">For UAE, US, UK, and Singapore investors seeking high rental yields.</p>
+              </a>
+            </div>
+          </div>
+        )}
+
+        {/* Tab 7: Knowledge FAQ */}
         {activeTab === 'faq' && (
           <div className="glass-panel rounded-3xl p-6 sm:p-10 shadow-xl border border-white/80 animate-fadeIn">
             <h3 className="text-xl sm:text-2xl font-display font-bold text-[#0F172A] mb-2">

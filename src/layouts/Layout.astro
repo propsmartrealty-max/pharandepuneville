@@ -113,6 +113,22 @@ const schemaOrg = {
           "name": "Pimpri-Chinchwad (PCMC), Pune"
         }
       },
+      "priceRange": "₹85 Lakhs - ₹1.35 Cr",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "428",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "09:00",
+          "closes": "20:00"
+        }
+      ],
       "amenityFeature": [
         { "@type": "LocationFeatureSpecification", "name": "22-Foot Elevated Skywalk", "value": true },
         { "@type": "LocationFeatureSpecification", "name": "4 Olympic-Sized Swimming Pools", "value": true },
@@ -138,6 +154,13 @@ const schemaOrg = {
         "lowPrice": "8500000",
         "highPrice": "13500000",
         "offerCount": "1900"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "428",
+        "bestRating": "5",
+        "worstRating": "1"
       },
       "address": {
         "@type": "PostalAddress",
@@ -188,6 +211,12 @@ const schemaOrg = {
     <meta name="author" content="Pharande Spaces" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en-IN" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en-AE" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en-US" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en-GB" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en-SG" href={canonicalUrl} />
+    <link rel="alternate" hreflang="x-default" href={canonicalUrl} />
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#0F172A" />
