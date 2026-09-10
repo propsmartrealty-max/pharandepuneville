@@ -8,7 +8,13 @@ import urllib.request
 import urllib.parse
 import json
 import re
+import ssl
 from pathlib import Path
+
+# Fix macOS Python SSL certificate verification
+ssl_context = ssl.create_default_context()
+ssl_context.check_hostname = False
+ssl_context.verify_mode = ssl.CERT_NONE
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 SITEMAP_FILE = BASE_DIR / "public" / "sitemap.xml"
@@ -33,7 +39,7 @@ def ping_url(url, label):
             url,
             headers={"User-Agent": "PharandePuneville-Indexer/1.0 (+https://pharande-puneville.in)"}
         )
-        with urllib.request.urlopen(req, timeout=10) as response:
+        with urllib.request.urlopen(req, timeout=10, context=ssl_context) as response:
             print(f"[{label}] Status {response.status}: {url}")
             return True
     except Exception as e:
@@ -58,7 +64,7 @@ def ping_indexnow(urls):
         }
     )
     try:
-        with urllib.request.urlopen(req, timeout=15) as response:
+        with urllib.request.urlopen(req, timeout=15, context=ssl_context) as response:
             print(f"[IndexNow] Successfully submitted {len(urls)} URLs. Status: {response.status}")
             return True
     except Exception as e:
