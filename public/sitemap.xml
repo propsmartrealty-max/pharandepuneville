@@ -2,14 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
+
   <!-- Primary Canonical Landing Page -->
   <url>
     <loc>https://pharande-puneville.in/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/" />
     <image:image>
       <image:loc>https://pharande-puneville.in/images/puneville/hero/banner1.jpg</image:loc>
@@ -31,311 +35,784 @@
     </image:image>
   </url>
 
-  <!-- Complete Topical Authority Ecosystem Hubs -->
   <url>
-    <loc>https://pharande-puneville.in/puneville-punawale</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://pharande-puneville.in/2-bhk-flats-in-punawale</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/2-bhk-flats-in-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/2-bhk-flats-in-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/2-bhk-flats-in-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/2-bhk-flats-in-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/2-bhk-flats-in-punawale" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/2-bhk-flats-in-punawale" />
   </url>
 
   <url>
     <loc>https://pharande-puneville.in/2-bhk-flats-punawale</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://pharande-puneville.in/images/puneville/floorplans/floorplan-2bhk-classic.jpg</image:loc>
-      <image:title>2 BHK Flats in Punawale - Pharande Puneville</image:title>
-      <image:caption>752 to 848 sq.ft. 2 BHK Royale &amp; Grande floorplans</image:caption>
-      <image:geo_location>Punawale, PCMC, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/2-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/2-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/2-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/2-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/2-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/2-bhk-flats-punawale" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/2.5-bhk-flats-in-punawale</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/2.5-bhk-flats-in-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/2.5-bhk-flats-in-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/2.5-bhk-flats-in-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/2.5-bhk-flats-in-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/2.5-bhk-flats-in-punawale" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/2.5-bhk-flats-in-punawale" />
   </url>
 
   <url>
     <loc>https://pharande-puneville.in/2.5-bhk-flats-punawale</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
-    <image:image>
-      <image:loc>https://pharande-puneville.in/images/puneville/floorplans/floorplan-2.5bhk.jpg</image:loc>
-      <image:title>2.5 BHK Luxury Pod Flats with Work From Home Pod - Puneville</image:title>
-      <image:caption>948 sq.ft. hybrid layout with dedicated office pod</image:caption>
-      <image:geo_location>Punawale, PCMC, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/2.5-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/2.5-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/2.5-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/2.5-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/2.5-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/2.5-bhk-flats-punawale" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/3-bhk-flats-in-punawale</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/3-bhk-flats-in-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/3-bhk-flats-in-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/3-bhk-flats-in-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/3-bhk-flats-in-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/3-bhk-flats-in-punawale" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/3-bhk-flats-in-punawale" />
   </url>
 
   <url>
     <loc>https://pharande-puneville.in/3-bhk-flats-punawale</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://pharande-puneville.in/images/puneville/floorplans/floorplan-3bhk-master.jpg</image:loc>
-      <image:title>3 BHK Luxury Flats in Punawale - Pharande Puneville</image:title>
-      <image:caption>1,172 sq.ft. Imperial 3 BHK signature residences</image:caption>
-      <image:geo_location>Punawale, PCMC, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/3-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/3-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/3-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/3-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/3-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/3-bhk-flats-punawale" />
   </url>
 
   <url>
     <loc>https://pharande-puneville.in/4-bhk-flats-punawale</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/4-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/4-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/4-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/4-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/4-bhk-flats-punawale" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/4-bhk-flats-punawale" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/aedas</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/aedas" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/aedas" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/aedas" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/aedas" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/aedas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/aedas" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/aedas-vision</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/aedas-vision" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/aedas-vision" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/aedas-vision" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/aedas-vision" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/aedas-vision" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/aedas-vision" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/amenities</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/amenities" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/amenities" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/amenities" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/amenities" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/amenities" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/amenities" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/book-visit</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/book-visit" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/book-visit" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/book-visit" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/book-visit" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/book-visit" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/book-visit" />
   </url>
 
   <url>
-    <loc>https://pharande-puneville.in/puneville-price-list</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>daily</changefreq>
+    <loc>https://pharande-puneville.in/brochure</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/brochure" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/brochure" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/brochure" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/brochure" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/brochure" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/brochure" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/cluster-d</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/cluster-d" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/cluster-d" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/cluster-d" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/cluster-d" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/cluster-d" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/cluster-d" />
   </url>
 
   <url>
-    <loc>https://pharande-puneville.in/puneville-floor-plans</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://pharande-puneville.in/construction</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/construction" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/construction" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/construction" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/construction" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/construction" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/construction" />
   </url>
 
   <url>
-    <loc>https://pharande-puneville.in/puneville-maharera-status</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://pharande-puneville.in/developer</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/developer" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/developer" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/developer" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/developer" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/developer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/developer" />
   </url>
 
   <url>
-    <loc>https://pharande-puneville.in/puneville-cluster-d</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://pharande-puneville.in/emi</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/emi" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/emi" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/emi" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/emi" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/emi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/emi" />
   </url>
 
   <url>
-    <loc>https://pharande-puneville.in/puneville-22ft-skywalk</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://pharande-puneville.in/emi-calculator</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/emi-calculator" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/emi-calculator" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/emi-calculator" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/emi-calculator" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/emi-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/emi-calculator" />
   </url>
 
   <url>
-    <loc>https://pharande-puneville.in/puneville-aedas-architecture</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://pharande-puneville.in/financials</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/financials" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/financials" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/financials" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/financials" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/financials" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/financials" />
   </url>
 
   <url>
-    <loc>https://pharande-puneville.in/puneville-amenities</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://pharande-puneville.in/flats-in-tathawade-punawale</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/flats-in-tathawade-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/flats-in-tathawade-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/flats-in-tathawade-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/flats-in-tathawade-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/flats-in-tathawade-punawale" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/flats-in-tathawade-punawale" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/flats-near-baner-balewadi</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/flats-near-baner-balewadi" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/flats-near-baner-balewadi" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/flats-near-baner-balewadi" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/flats-near-baner-balewadi" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/flats-near-baner-balewadi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/flats-near-baner-balewadi" />
   </url>
 
   <url>
     <loc>https://pharande-puneville.in/flats-near-hinjawadi-it-park</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/flats-near-hinjawadi-it-park" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/flats-near-hinjawadi-it-park" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/flats-near-hinjawadi-it-park" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/flats-near-hinjawadi-it-park" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/flats-near-hinjawadi-it-park" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/flats-near-hinjawadi-it-park" />
   </url>
 
   <url>
     <loc>https://pharande-puneville.in/flats-near-mumbai-pune-expressway</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/flats-near-mumbai-pune-expressway" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/flats-near-mumbai-pune-expressway" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/flats-near-mumbai-pune-expressway" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/flats-near-mumbai-pune-expressway" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/flats-near-mumbai-pune-expressway" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/flats-near-mumbai-pune-expressway" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/flats-near-ravet-pcmc</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/flats-near-ravet-pcmc" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/flats-near-ravet-pcmc" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/flats-near-ravet-pcmc" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/flats-near-ravet-pcmc" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/flats-near-ravet-pcmc" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/flats-near-ravet-pcmc" />
   </url>
 
   <url>
     <loc>https://pharande-puneville.in/flats-near-wakad-pcmc</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://pharande-puneville.in/puneville-investment-rental-yield</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://pharande-puneville.in/puneville-specifications-quality</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/flats-near-wakad-pcmc" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/flats-near-wakad-pcmc" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/flats-near-wakad-pcmc" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/flats-near-wakad-pcmc" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/flats-near-wakad-pcmc" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/flats-near-wakad-pcmc" />
   </url>
 
   <url>
-    <loc>https://pharande-puneville.in/puneville-reviews-faq</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://pharande-puneville.in/puneville-brochure-download</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://pharande-puneville.in/floor-plans</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/floor-plans" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/floor-plans" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/floor-plans" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/floor-plans" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/floor-plans" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/floor-plans" />
   </url>
 
   <url>
-    <loc>https://pharande-puneville.in/puneville-resale-rental</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://pharande-puneville.in/gallery</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/gallery" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/gallery" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/gallery" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/gallery" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/gallery" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/gallery" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/location</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/location" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/location" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/location" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/location" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/location" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/location" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/masterplan</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/masterplan" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/masterplan" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/masterplan" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/masterplan" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/masterplan" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/masterplan" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/nri-investment-punawale-pune</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/nri-investment-punawale-pune" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/nri-investment-punawale-pune" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/nri-investment-punawale-pune" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/nri-investment-punawale-pune" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/nri-investment-punawale-pune" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/nri-investment-punawale-pune" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/nri-property-investment-punawale-pune</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/nri-property-investment-punawale-pune" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/nri-property-investment-punawale-pune" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/nri-property-investment-punawale-pune" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/nri-property-investment-punawale-pune" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/nri-property-investment-punawale-pune" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/nri-property-investment-punawale-pune" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/pharande-puneville-cluster-d</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/pharande-puneville-cluster-d" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/pharande-puneville-cluster-d" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/pharande-puneville-cluster-d" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/pharande-puneville-cluster-d" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/pharande-puneville-cluster-d" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/pharande-puneville-cluster-d" />
   </url>
 
   <url>
     <loc>https://pharande-puneville.in/pharande-spaces-legacy</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/pharande-spaces-legacy" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/pharande-spaces-legacy" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/pharande-spaces-legacy" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/pharande-spaces-legacy" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/pharande-spaces-legacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/pharande-spaces-legacy" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/pharande-spaces-punawale</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/pharande-spaces-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/pharande-spaces-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/pharande-spaces-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/pharande-spaces-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/pharande-spaces-punawale" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/pharande-spaces-punawale" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/pricing</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/pricing" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/pricing" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/pricing" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/pricing" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/pricing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/pricing" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/puneville-22ft-skywalk</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-22ft-skywalk" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-22ft-skywalk" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-22ft-skywalk" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-22ft-skywalk" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-22ft-skywalk" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-22ft-skywalk" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/puneville-aedas-architecture</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-aedas-architecture" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-aedas-architecture" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-aedas-architecture" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-aedas-architecture" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-aedas-architecture" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-aedas-architecture" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/puneville-amenities</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-amenities" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-amenities" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-amenities" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-amenities" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-amenities" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-amenities" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/puneville-brochure-download</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-brochure-download" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-brochure-download" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-brochure-download" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-brochure-download" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-brochure-download" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-brochure-download" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/puneville-cluster-a</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-cluster-a" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-cluster-a" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-cluster-a" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-cluster-a" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-cluster-a" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-cluster-a" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/puneville-cluster-b</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-cluster-b" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-cluster-b" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-cluster-b" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-cluster-b" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-cluster-b" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-cluster-b" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/puneville-cluster-c</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-cluster-c" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-cluster-c" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-cluster-c" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-cluster-c" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-cluster-c" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-cluster-c" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/puneville-cluster-d</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-cluster-d" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-cluster-d" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-cluster-d" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-cluster-d" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-cluster-d" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-cluster-d" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/puneville-floor-plans</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-floor-plans" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-floor-plans" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-floor-plans" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-floor-plans" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-floor-plans" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-floor-plans" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/puneville-investment-rental-yield</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-investment-rental-yield" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-investment-rental-yield" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-investment-rental-yield" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-investment-rental-yield" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-investment-rental-yield" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-investment-rental-yield" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/puneville-maharera-status</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-maharera-status" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-maharera-status" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-maharera-status" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-maharera-status" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-maharera-status" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-maharera-status" />
   </url>
 
   <url>
     <loc>https://pharande-puneville.in/puneville-phase-1</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://pharande-puneville.in/puneville-phase-2</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://pharande-puneville.in/puneville-phase-3</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://pharande-puneville.in/puneville-cluster-a</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://pharande-puneville.in/puneville-cluster-b</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://pharande-puneville.in/puneville-cluster-c</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://pharande-puneville.in/flats-in-tathawade-punawale</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://pharande-puneville.in/flats-near-ravet-pcmc</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://pharande-puneville.in/flats-near-baner-balewadi</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://pharande-puneville.in/puneville-vs-godrej-woodsville</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-  </url>
-  <url>
-    <loc>https://pharande-puneville.in/puneville-vs-kolte-patil-life-republic</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-  </url>
-  <url>
-    <loc>https://pharande-puneville.in/puneville-vs-pharande-kairosa</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://pharande-puneville.in/nri-property-investment-punawale-pune</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-phase-1" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-phase-1" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-phase-1" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-phase-1" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-phase-1" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-phase-1" />
   </url>
 
-  <!-- Clean Section Vanity Routes -->
   <url>
-    <loc>https://pharande-puneville.in/aedas-vision</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://pharande-puneville.in/puneville-phase-2</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-phase-2" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-phase-2" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-phase-2" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-phase-2" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-phase-2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-phase-2" />
   </url>
+
   <url>
-    <loc>https://pharande-puneville.in/masterplan</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://pharande-puneville.in/puneville-phase-3</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-phase-3" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-phase-3" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-phase-3" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-phase-3" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-phase-3" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-phase-3" />
   </url>
+
   <url>
-    <loc>https://pharande-puneville.in/towers</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://pharande-puneville.in/puneville-price-list</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-price-list" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-price-list" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-price-list" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-price-list" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-price-list" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-price-list" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/puneville-punawale</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-punawale" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-punawale" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-punawale" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/puneville-resale-rental</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-resale-rental" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-resale-rental" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-resale-rental" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-resale-rental" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-resale-rental" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-resale-rental" />
   </url>
+
   <url>
-    <loc>https://pharande-puneville.in/floor-plans</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://pharande-puneville.in/puneville-reviews-faq</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-reviews-faq" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-reviews-faq" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-reviews-faq" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-reviews-faq" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-reviews-faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-reviews-faq" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/puneville-specifications-quality</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-specifications-quality" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-specifications-quality" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-specifications-quality" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-specifications-quality" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-specifications-quality" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-specifications-quality" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/puneville-vs-godrej-woodsville</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-vs-godrej-woodsville" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-vs-godrej-woodsville" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-vs-godrej-woodsville" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-vs-godrej-woodsville" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-vs-godrej-woodsville" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-vs-godrej-woodsville" />
   </url>
+
   <url>
-    <loc>https://pharande-puneville.in/amenities</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://pharande-puneville.in/puneville-vs-kolte-patil-life-republic</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-vs-kolte-patil-life-republic" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-vs-kolte-patil-life-republic" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-vs-kolte-patil-life-republic" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-vs-kolte-patil-life-republic" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-vs-kolte-patil-life-republic" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-vs-kolte-patil-life-republic" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/puneville-vs-pharande-kairosa</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/puneville-vs-pharande-kairosa" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/puneville-vs-pharande-kairosa" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/puneville-vs-pharande-kairosa" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/puneville-vs-pharande-kairosa" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/puneville-vs-pharande-kairosa" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/puneville-vs-pharande-kairosa" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/residences</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/residences" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/residences" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/residences" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/residences" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/residences" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/residences" />
   </url>
+
   <url>
-    <loc>https://pharande-puneville.in/gallery</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://pharande-puneville.in/skywalk</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/skywalk" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/skywalk" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/skywalk" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/skywalk" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/skywalk" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/skywalk" />
+  </url>
+
+  <url>
+    <loc>https://pharande-puneville.in/towers</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/towers" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/towers" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/towers" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/towers" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/towers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/towers" />
   </url>
+
   <url>
-    <loc>https://pharande-puneville.in/location</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://pharande-puneville.in/vision</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://pharande-puneville.in/emi-calculator</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://pharande-puneville.in/construction</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://pharande-puneville.in/developer</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pharande-puneville.in/vision" />
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://pharande-puneville.in/vision" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pharande-puneville.in/vision" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pharande-puneville.in/vision" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://pharande-puneville.in/vision" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pharande-puneville.in/vision" />
   </url>
 
 </urlset>
