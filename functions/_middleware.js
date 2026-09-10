@@ -168,34 +168,39 @@ class EdgeHeadHandler {
   }
 }
 
-// 3. Edge Title Handler: Programmatic SEO Titles or Geo-Optimized Titles
+// 3. Edge Title Handler: Programmatic SEO Titles (Preserves Astro Static Titles)
 class EdgeTitleHandler {
-  constructor(cf, pSeo) {
+  constructor(cf, pSeo, isHomepage) {
     this.cf = cf;
     this.pSeo = pSeo;
+    this.isHomepage = isHomepage;
   }
 
   element(element) {
+    // If programmatic SEO route, set its title
     if (this.pSeo && this.pSeo.title) {
       element.setInnerContent(this.pSeo.title);
       return;
     }
 
-    const city = (this.cf.city || '').toLowerCase();
-    const country = this.cf.country || 'IN';
+    // Only adapt geo-title on the root homepage so inner Astro static pages keep their unique titles
+    if (this.isHomepage) {
+      const city = (this.cf.city || '').toLowerCase();
+      const country = this.cf.country || 'IN';
 
-    if (country !== 'IN') {
-      element.setInnerContent(
-        'Pharande Puneville | Luxury 28-Acre Aedas Township, Pune | Global NRI Investor Desk'
-      );
-    } else if (city.includes('mumbai') || city.includes('thane') || city.includes('navi')) {
-      element.setInnerContent(
-        'Pharande Puneville | 2 Mins from Mumbai-Pune Expressway Exit | Luxury 2 & 3 BHK Homes'
-      );
-    } else if (city.includes('pune') || city.includes('pimpri') || city.includes('chinchwad')) {
-      element.setInnerContent(
-        'Pharande Puneville Punawale | 2, 2.5 & 3 BHK Near Hinjawadi IT Park & Expressway'
-      );
+      if (country !== 'IN') {
+        element.setInnerContent(
+          'Pharande Puneville | Luxury 28-Acre Aedas Township, Pune | Global NRI Investor Desk'
+        );
+      } else if (city.includes('mumbai') || city.includes('thane') || city.includes('navi')) {
+        element.setInnerContent(
+          'Pharande Puneville | 2 Mins from Mumbai-Pune Expressway Exit | Luxury 2 & 3 BHK Homes'
+        );
+      } else if (city.includes('pune') || city.includes('pimpri') || city.includes('chinchwad')) {
+        element.setInnerContent(
+          'Pharande Puneville Punawale | 2, 2.5 & 3 BHK Near Hinjawadi IT Park & Expressway'
+        );
+      }
     }
   }
 }
@@ -284,9 +289,11 @@ export async function onRequest(context) {
     });
   }
 
-  // 2. Detect Programmatic SEO Target
+  // 2. Detect Route & Programmatic SEO Target
   const pSeo = getProgrammaticSeo(url.pathname) || (url.searchParams.get('pseo') ? getProgrammaticSeo('/' + url.searchParams.get('pseo')) : null);
-  const canonicalUrl = pSeo ? `https://pharande-puneville.in/${pSeo.slug}` : 'https://pharande-puneville.in/';
+  const isHomepage = url.pathname === '/' || url.pathname === '';
+  const cleanPath = isHomepage ? '' : url.pathname.replace(/\/$/, '');
+  const canonicalUrl = pSeo ? `https://pharande-puneville.in/${pSeo.slug}` : `https://pharande-puneville.in${cleanPath}`;
 
   const isSearchEngine = /googlebot|bingbot|applebot|duckduckbot|slurp|yandex|baiduspider/i.test(userAgent);
   const isSocialBot = /facebookexternalhit|whatsapp|twitterbot|linkedinbot|telegrambot|pinterest/i.test(userAgent);
@@ -322,7 +329,7 @@ export async function onRequest(context) {
   // Transform HTML on-the-fly using Cloudflare C++ Streaming HTMLRewriter
   const rewriter = new HTMLRewriter()
     .on('head', new EdgeHeadHandler(cf, isBot, request.url, pSeo))
-    .on('title', new EdgeTitleHandler(cf, pSeo))
+    .on('title', new EdgeTitleHandler(cf, pSeo, isHomepage))
     .on('img', new EdgeImageHandler());
 
   // If Programmatic SEO is active for this route, dynamically rewrite metadata tags

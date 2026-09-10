@@ -74,7 +74,7 @@ export const CLEAN_ROUTES = [
     id: "construction",
     navLabel: "CONSTRUCTION",
     title: "MahaRERA Cluster D Construction Status | Pharande Puneville",
-    description: "Track engineering craftsmanship, structural specifications, and MahaRERA P52100000044 construction milestones for Wings Q, R, S.",
+    description: "Track engineering craftsmanship, structural specifications, and MahaRERA P52100047694 construction milestones for Wings Q, R, S.",
     canonicalUrl: "https://pharande-puneville.in/construction"
   },
   {
@@ -97,7 +97,7 @@ export const CLEAN_ROUTES = [
     path: "/cluster-d",
     id: "masterplan",
     navLabel: "CLUSTER D",
-    title: "Pharande Puneville Cluster D | MahaRERA P52100000044",
+    title: "Pharande Puneville Cluster D | MahaRERA P52100047694",
     description: "Newly launched Cluster D Wings Q, R, S at Pharande Puneville Punawale. 2 & 3 BHK luxury residences with panoramic views.",
     canonicalUrl: "https://pharande-puneville.in/cluster-d"
   },

@@ -165,11 +165,11 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
   "/pharande-puneville-cluster-d": {
     slug: "pharande-puneville-cluster-d",
     targetKeyword: "Pharande Puneville Cluster D Wings Q R S",
-    title: "Pharande Puneville Cluster D (Wings Q, R, S) | MahaRERA P52100000044",
+    title: "Pharande Puneville Cluster D (Wings Q, R, S) | MahaRERA P52100047694",
     description: "Newly launched Cluster D at Pharande Puneville featuring Wings Q, R, and S. Premium 2 & 2.5 BHK residences with modern sundecks and skywalk access.",
-    keywords: "pharande puneville cluster d, puneville wing q, puneville wing r, puneville wing s, puneville rera P52100000044",
+    keywords: "pharande puneville cluster d, puneville wing q, puneville wing r, puneville wing s, puneville rera P52100047694",
     badge: "⚡ Newly Launched: Cluster D (Wings Q, R, S)",
-    announcement: "Fresh Inventory in Cluster D: Secure newly launched 2 & 2.5 BHK units in Wings Q, R, S registered under MahaRERA P52100000044.",
+    announcement: "Fresh Inventory in Cluster D: Secure newly launched 2 & 2.5 BHK units in Wings Q, R, S registered under MahaRERA P52100047694.",
     price: "₹ 85 Lakhs - ₹ 1.08 Cr*",
     carpetArea: "752 - 948 sq.ft.",
     ogImage: "https://pharande-puneville.in/images/puneville/masterplan/masterplan-layout.jpg",
@@ -182,7 +182,7 @@ export const PROGRAMMATIC_SEO_REGISTRY = {
     faq: [
       {
         q: "What is the MahaRERA number for Puneville Cluster D?",
-        a: "Pharande Puneville Cluster D is officially registered under MahaRERA registration number P52100000044."
+        a: "Pharande Puneville Cluster D is officially registered under MahaRERA registration number P52100047694."
       }
     ]
   },

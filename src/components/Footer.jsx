@@ -36,7 +36,7 @@ export default function Footer({ onOpenBrochure, onOpenVisit, onNavigate }) {
             <div className="flex items-center gap-3 pt-2">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs font-semibold">
                 <ShieldCheck className="w-3.5 h-3.5" />
-                MahaRERA: P52100000044
+                MahaRERA: P52100047694
               </span>
               <span className="text-xs text-slate-400">Wings Q, R, S</span>
             </div>
